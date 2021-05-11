@@ -8,15 +8,16 @@ import { Layout } from '@ui-kitten/components'
  * @param opt.attempts the list of attempt to display
  * @param opt.attempts the fn to apply when the limit if attempts is reached
  */
-export default function AttemptList({ maxAttepmt, attempts, onReachLimit }) {
+export default function AttemptList({ maxAttepmt, attempts, onReachLimit, ...props }) {
   /** When a new attempt appear, check if we reach the limit */
   useEffect(() => {
     if (attempts.length >= maxAttepmt) {
       onReachLimit()
     }
   }, [attempts])
+  console.log('attempts:', attempts) /* dump variable */
   return (
-    <Layout>
+    <Layout {...props}>
       {Array.from({ length: maxAttepmt }).map((_, i) => {
         return (
           <Attempt

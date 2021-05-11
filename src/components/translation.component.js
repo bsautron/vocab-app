@@ -1,4 +1,4 @@
-import { Card } from '@ui-kitten/components'
+import { Card, Icon } from '@ui-kitten/components'
 import React, { useEffect, useState } from 'react'
 import { StyleSheet } from 'react-native'
 import { CardStyles } from '../styles'
@@ -13,6 +13,9 @@ import TranslationTitle from './translation-title.component'
  */
 function isValid(trad, text) {
   const sp = trad.split('/')
+  console.log('sp:', sp) /* dump variable */
+  console.log('text:', text) /* dump variable */
+
   for (const s of sp) {
     if (s === text) return true
   }
@@ -21,9 +24,9 @@ function isValid(trad, text) {
 /**
  * The entiere card for the translation of one word
  * @param opt.word all information about the word
- * @param opt.changeWord the fn to applay we need the change word
+ * @param opt.onChangeWord the fn to applay we need the change word
  */
-export default function Translation({ word, changeWord }) {
+export default function ({ word, onChangeWord }) {
   /** the array of attempts for the word */
   const [attempts, setAttempts] = useState([])
   /** use for shoing the traduction of the word */
@@ -67,7 +70,7 @@ export default function Translation({ word, changeWord }) {
       setDisplayTrad(false)
       setAttempts([])
       setInput('')
-      changeWord()
+      onChangeWord()
     }
   }, [goToChange])
 
@@ -84,22 +87,34 @@ export default function Translation({ word, changeWord }) {
     }
   }, [dontKnow])
 
+
+  const onNewAttempt = (wordAttempt) => {
+    pushAttempt(isValid(word.es, wordAttempt), wordAttempt)
+  }
+
   return (
     <Card style={styles.card}>
       <TranslationTitle
+        style={{ marginBottom: 20 }}
         word={word.fr}
         trad={word.es}
         showTrad={showTrad}
       />
       <AttemptList
+        style={{ marginBottom: 10 }}
         maxAttepmt={3}
         attempts={attempts}
         onReachLimit={() => setDontKnow(true)}
       />
       <TranslationInput
         value={textInput}
-        onChangeText={(text) => setInput(text)}
+        readyToNext={showTrad}
+        onChangeText={setInput}
+        onPressDontKnow={() => setDontKnow(true)}
+        onPressNext={() => letsGoToChange(true)}
+        onPressSubmit={onNewAttempt}
         disabled={showTrad}
+        onSubmitEditing={e => console.log(e)}
       />
     </Card>
   )
@@ -110,7 +125,6 @@ export default function Translation({ word, changeWord }) {
 const styles = StyleSheet.create({
   card: {
     ...CardStyles.cardDefault,
-    width: 250
+    flex: 1,
   },
-
 })

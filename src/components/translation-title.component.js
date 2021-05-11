@@ -1,4 +1,4 @@
-import { Text } from '@ui-kitten/components'
+import { Layout, Text } from '@ui-kitten/components'
 import React from 'react'
 
 /**
@@ -7,10 +7,16 @@ import React from 'react'
  * @param opt.trad the text of translation of the word
  * @param opt.showTrad show the translation if true
  */
-export default function TranslationTitle({ word, trad, showTrad }) {
+export default function TranslationTitle({ word, trad, showTrad, ...props }) {
+  const maj = (str) => str[0].toUpperCase() + str.slice(1).toLowerCase()
   return (
-    <Text>
-      {word} {showTrad ? ` - ${trad}` : ''}
-    </Text>
+    <Layout {...props}>
+      <Text style={{ alignSelf: 'center' }} category="h4">
+        {maj(word)}
+      </Text>
+      <Text style={{ alignSelf: 'center' }} status="primary" category="h3">
+        {showTrad ? maj(trad) : '  '}
+      </Text>
+    </Layout>
   )
 }
