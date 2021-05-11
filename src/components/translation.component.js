@@ -13,8 +13,6 @@ import TranslationTitle from './translation-title.component'
  */
 function isValid(trad, text) {
   const sp = trad.split('/')
-  console.log('sp:', sp) /* dump variable */
-  console.log('text:', text) /* dump variable */
 
   for (const s of sp) {
     if (s === text) return true
@@ -96,12 +94,14 @@ export default function ({ word, onChangeWord }) {
     <Card style={styles.card}>
       <TranslationTitle
         style={{ marginBottom: 20 }}
-        word={word.fr}
-        trad={word.es}
+        skeleton={!word}
+        word={word?.fr}
+        trad={word?.es}
         showTrad={showTrad}
       />
       <AttemptList
         style={{ marginBottom: 10 }}
+        skeleton={!word}
         maxAttepmt={3}
         attempts={attempts}
         onReachLimit={() => setDontKnow(true)}
@@ -109,12 +109,12 @@ export default function ({ word, onChangeWord }) {
       <TranslationInput
         value={textInput}
         readyToNext={showTrad}
+        skeleton={!word}
         onChangeText={setInput}
         onPressDontKnow={() => setDontKnow(true)}
         onPressNext={() => letsGoToChange(true)}
         onPressSubmit={onNewAttempt}
         disabled={showTrad}
-        onSubmitEditing={e => console.log(e)}
       />
     </Card>
   )

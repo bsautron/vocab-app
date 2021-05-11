@@ -10,6 +10,7 @@ import { Pressable } from 'react-native'
  */
 export default function TranslationInput({
   value,
+  skeleton,
   readyToNext,
   onChangeText,
   onPressDontKnow,
@@ -25,18 +26,17 @@ export default function TranslationInput({
   }
   return (
     <Layout>
-
       <Input
         value={value}
-        label='Traduit le mot'
-        disabled={readyToNext}
+        label='traduis le mot'
+        disabled={skeleton || readyToNext}
         onChangeText={onChangeText}
         accessoryRight={renderSubmitIcon}
         secureTextEntry={false}
       />
-      <ButtonGroup style={{ alignSelf: 'center' }}>
-        <Button disabled={readyToNext} onPress={onPressDontKnow} accessoryLeft={(props) => (<Icon {...props} name='person-delete-outline' />)} />
-        <Button disabled={!readyToNext} onPress={onPressNext} accessoryLeft={(props) => (<Icon {...props} name='arrow-forward-outline' />)} />
+      <ButtonGroup disabled={skeleton} style={{ alignSelf: 'center' }}>
+        <Button disabled={skeleton || readyToNext} onPress={onPressDontKnow} accessoryLeft={(props) => (<Icon {...props} name='person-delete-outline' />)} />
+        <Button disabled={skeleton || !readyToNext} onPress={onPressNext} accessoryLeft={(props) => (<Icon {...props} name='arrow-forward-outline' />)} />
       </ButtonGroup>
     </Layout >
 

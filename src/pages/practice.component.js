@@ -1,6 +1,6 @@
-import React, { useEffect, useState, } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import { Card, Divider, Icon, Layout, Text, TopNavigation, Autocomplete, AutocompleteItem, Modal, Button } from '@ui-kitten/components';
+import { Card, Divider, Icon, Layout, Text, TopNavigation, Tooltip, Autocomplete, AutocompleteItem, Modal, Button } from '@ui-kitten/components';
 import { gql, useQuery, useLazyQuery } from '@apollo/client'
 import { CardStyles } from '../styles'
 import Translation from '../components/translation.component';
@@ -30,7 +30,8 @@ export const PracticeScreen = ({ navigation }) => {
     const [selectedTag, setSelectedTag] = useState(null)
     const [displayModal, setDisplayModal] = useState(false)
     const [selectedWord, setSelectedWord] = useState(null)
-    const { loading: searchTagLoading, error: searchTagError, data: searchTagData } = useQuery(SEARCH_TAG_QUERY, {
+
+    const { data: searchTagData } = useQuery(SEARCH_TAG_QUERY, {
         variables: { query: inputTag },
     });
     const [getRandomWords, { data: randsWordsData }] = useLazyQuery(RANDOM_WORDS_QUERY);
@@ -66,8 +67,6 @@ export const PracticeScreen = ({ navigation }) => {
     }, [selectedTag])
 
     useEffect(selectWord, [randsWordsData])
-
-
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <TopNavigation title='Pratiquer' alignment='center' />
@@ -93,9 +92,10 @@ export const PracticeScreen = ({ navigation }) => {
                             )
 
                     }
+
                 </Layout>
                 <Layout style={{ marginBottom: 50 }}>
-                    {selectedWord && <Translation word={selectedWord} onChangeWord={selectWord} />}
+                    <Translation word={selectedWord} onChangeWord={selectWord} />
                 </Layout>
             </Layout>
 
@@ -105,7 +105,7 @@ export const PracticeScreen = ({ navigation }) => {
                 backdropStyle={styles.backdrop}
                 onBackdropPress={() => setDisplayModal(false)}>
                 <Card style={styles.card}>
-                    <Text category="h6">Choisisez un thème</Text>
+                    <Text style={styles.label} category="h6">Choisis un thème</Text>
                     <Autocomplete
                         placeholder='ex: Ropa'
                         value={inputTag}
@@ -122,6 +122,11 @@ export const PracticeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     card: {
         ...CardStyles.cardDefault,
+        paddingHorizontal: 20,
+        paddingVertical: 30,
+    },
+    label: {
+        marginBottom: 40
     },
     backdrop: {
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
