@@ -125,6 +125,5 @@ export default function ({ word, onChangeWord }) {
 const styles = StyleSheet.create({
   card: {
     ...CardStyles.cardDefault,
-    flex: 1,
   },
 })

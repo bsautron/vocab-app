@@ -27,8 +27,9 @@ export default function TranslationInput({
   return (
     <Layout>
       <Input
+        style={{ marginBottom: 15 }}
         value={value}
-        label='traduis le mot'
+        label='Traduis le mot'
         disabled={skeleton || readyToNext}
         onChangeText={onChangeText}
         accessoryRight={renderSubmitIcon}
