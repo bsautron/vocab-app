@@ -1,8 +1,9 @@
-import { Card, Icon } from '@ui-kitten/components'
+import { Button, Card, Icon } from '@ui-kitten/components'
 import React, { useEffect, useState } from 'react'
 import { StyleSheet } from 'react-native'
 import { CardStyles } from '../styles'
 import AttemptList from './attempt-list.component'
+import ContextTrad from './context-trad.component'
 import TranslationInput from './translation-input.component'
 import TranslationTitle from './translation-title.component'
 
@@ -24,7 +25,7 @@ function isValid(trad, text) {
  * @param opt.word all information about the word
  * @param opt.onChangeWord the fn to applay we need the change word
  */
-export default function ({ word, onChangeWord }) {
+export default function Translation({ navigation, word, onChangeWord }) {
   /** the array of attempts for the word */
   const [attempts, setAttempts] = useState([])
   /** use for shoing the traduction of the word */
@@ -92,6 +93,7 @@ export default function ({ word, onChangeWord }) {
 
   return (
     <Card style={styles.card}>
+      {showTrad && <ContextTrad navigation={navigation} word={word} />}
       <TranslationTitle
         style={{ marginBottom: 20 }}
         skeleton={!word}

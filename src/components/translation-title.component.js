@@ -1,7 +1,8 @@
-import { Layout, Text } from '@ui-kitten/components'
+import { Button, Icon, Layout, Text } from '@ui-kitten/components'
 import React from 'react'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, TouchableOpacity } from 'react-native'
 import { SkeletonStyles } from '../styles'
+
 /**
  * Display the word to translate and eventualy his translation
  * @param opt.word the text of the word to translate

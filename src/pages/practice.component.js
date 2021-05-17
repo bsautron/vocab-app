@@ -31,20 +31,14 @@ export const PracticeScreen = ({ navigation }) => {
 
     const selectWord = () => {
         const listWords = randsWordsData?.words || []
-        console.log('listWords:', listWords) /* dump variable */
         const length = listWords.length
-        console.log('length:', length) /* dump variable */
         const randIndex = Math.floor(Math.random() * length)
-        console.log('randIndex:', randIndex) /* dump variable */
         setSelectedWord(listWords[Math.floor(randIndex)])
     }
 
-    useEffect(() => {
-        console.log('CHANGE TAG:', tag)
-        newWords()
-    }, [tag])
-
+    useEffect(newWords, [tag])
     useEffect(selectWord, [randsWordsData])
+
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <TopNavigation title='Pratiquer' alignment='center' />
@@ -52,7 +46,7 @@ export const PracticeScreen = ({ navigation }) => {
 
             <Layout style={{ flex: 1, alignItems: 'center', alignContent: 'center', justifyContent: 'flex-start' }}>
                 <TagSelection onSelectTag={setTag} />
-                <Translation word={selectedWord} onChangeWord={selectWord} />
+                <Translation navigation={navigation} word={selectedWord} onChangeWord={selectWord} />
             </Layout>
 
         </SafeAreaView >
