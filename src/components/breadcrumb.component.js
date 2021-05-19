@@ -8,8 +8,8 @@ export default function Breadcrumb({ textEdit, items, onPress }) {
     return (
         <TouchableOpacity onPress={onPress} style={styles.layout}>
             <Icon style={{
-                width: 20,
-                height: 20,
+                width: 18,
+                height: 18,
                 marginRight: 10
             }} name='edit-2-outline' />
             <Text category='c1' status='basic'>{textEdit} :</Text>

@@ -44,7 +44,7 @@ export const PracticeScreen = ({ navigation }) => {
             <TopNavigation title='Pratiquer' alignment='center' />
             <Divider />
 
-            <Layout style={{ flex: 1, alignItems: 'center', alignContent: 'center', justifyContent: 'flex-start' }}>
+            <Layout style={{ flex: 1, alignItems: 'center', padding: 20, alignContent: 'center', justifyContent: 'flex-start' }}>
                 <TagSelection onSelectTag={setTag} />
                 <Translation navigation={navigation} word={selectedWord} onChangeWord={selectWord} />
             </Layout>

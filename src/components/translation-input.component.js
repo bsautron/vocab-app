@@ -1,6 +1,7 @@
 import React from 'react'
 import { Input, Layout, Button, Icon, ButtonGroup } from '@ui-kitten/components'
 import { Pressable } from 'react-native'
+import SubmitInput from './submit-input.component'
 
 /**
  * The input for the translation
@@ -17,23 +18,16 @@ export default function TranslationInput({
   onPressSubmit,
   onPressNext,
 }) {
-  const renderSubmitIcon = (props) => {
-    const trimValue = value.trim()
-    return <Pressable onPress={() => trimValue && onPressSubmit(trimValue)}>
-      <Icon {...props} name='corner-down-left-outline' />
-    </Pressable>
-
-  }
   return (
     <Layout>
-      <Input
-        style={{ marginBottom: 15 }}
-        value={value}
+      <SubmitInput
         label='Traduis le mot'
+        value={value}
         disabled={skeleton || readyToNext}
         onChangeText={onChangeText}
-        accessoryRight={renderSubmitIcon}
-        secureTextEntry={false}
+        onPressSubmit={onPressSubmit}
+        iconName='corner-down-left-outline'
+
       />
       <ButtonGroup disabled={skeleton} style={{ alignSelf: 'center' }}>
         <Button disabled={skeleton || readyToNext} onPress={onPressDontKnow} accessoryLeft={(props) => (<Icon {...props} name='person-delete-outline' />)} />

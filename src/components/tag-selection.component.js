@@ -8,7 +8,7 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 const SEARCH_TAG_QUERY = gql`
     query SearchTags($query: String!){
         searchTags(query: $query) {
-            name
+            slug
         }
     }
 `
@@ -28,10 +28,10 @@ export default function TagSelection({ onSelectTag }) {
         }
     }, [tag])
 
-    const renderOption = ({ name }) => {
+    const renderOption = ({ slug, fr }) => {
         return <AutocompleteItem
-            key={name}
-            title={name}
+            key={slug}
+            title={fr}
         />
     }
 
@@ -63,9 +63,9 @@ export default function TagSelection({ onSelectTag }) {
                         Choisis un thème
                     </Text>
                     <Autocomplete
-                        placeholder='ex: Ropa'
+                        placeholder='ex: Vetements'
                         value={inputTag}
-                        onSelect={index => setTag(data.searchTags[index].name)}
+                        onSelect={index => setTag(data.searchTags[index].slug)}
                         onChangeText={text => setInputTag(text)}>
                         {data?.searchTags.map(renderOption)}
                     </Autocomplete>

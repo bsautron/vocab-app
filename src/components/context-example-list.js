@@ -4,6 +4,6 @@ import ContextExample from './context-example.component'
 
 export default function ContextExampleList({ list }) {
     return <Layout>
-        {list.map(l => <ContextExample fr={l.fr} es={l.es} />)}
+        {list.map(l => <ContextExample fr={l.locales.fr} es={l.locales.es} />)}
     </Layout>
 }
