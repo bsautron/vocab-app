@@ -27,7 +27,7 @@ export default function ContextExample({ fr, es }) {
     }
 
     return <Layout style={{ margin: 10 }}>
-        {renderText(`${es}`, true)}
-        {renderText(`“ ${fr} ”`, false)}
+        {renderText(`“ ${fr} ”`, true)}
+        {renderText(`${es}`, false)}
     </Layout>
 }

@@ -1,41 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
 import { Card, Divider, Input, Layout, Text, TopNavigation } from '@ui-kitten/components';
 import { CardStyles } from '../styles';
 import SubmitInput from '../components/submit-input.component';
+import { gql, useQuery } from '@apollo/client'
 
 
-const cats = [
-    {
-        slug: 'travel/airport',
-        locales: {
-            fr: 'Voyage, A l\'aéroport',
-            es: 'Viaje, En el aeropuerto',
-        },
-        image: require('../../assets/undraw_journey_lwlj.png'), title: 'Enfin arrivé'
-    },
-    {
-        slug: 'travel/transports',
-        image: require('../../assets/undraw_Order_ride_re_372k.png'),
-        locales: {
-            fr: 'Voyage, Les transports',
-            es: 'Viaje, Los transportes',
-        },
-        title: 'Pour y aller'
-    },
-    {
-        slug: 'travel/eat',
-        image: require('../../assets/undraw_special_event_4aj8.png'),
-        locales: {
-            fr: 'Voyage, Manger',
-            es: 'Viaje, Comer',
-        },
-        title: 'J\'ai faim'
-    },
-]
+const SEARCH_CATEGORY_QUERY = gql`
+    query {
+        categories {
+            slug
+            es
+            fr
+            image
+        }
+    }
+`
 
 export const ImmersionScreen = ({ navigation, route }) => {
-
+    const { data } = useQuery(SEARCH_CATEGORY_QUERY)
     const [inputText, setInputText] = useState('')
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -56,13 +39,13 @@ export const ImmersionScreen = ({ navigation, route }) => {
                             iconName='search-outline'
 
                         />
-                        {cats.filter(c => c.title.toLowerCase().includes(inputText.toLowerCase())).map(c => {
-                            return <Card style={styles.card}>
+                        {data?.categories.map(c => {
+                            return <Card key={c.slug} style={styles.card}>
                                 <TouchableOpacity onPress={() => navigation.push('ImmersionCate', {
                                     category: c
                                 })}>
-                                    <Text category='h5' style={styles.text}>{c.title}</Text>
-                                    <Image source={c.image} style={styles.image} />
+                                    <Text category='h5' style={styles.text}>{c.fr.split(',')[1]}</Text>
+                                    <Image source={`http://localhost:3000/${c.image}`} style={styles.image} />
                                 </TouchableOpacity>
                             </Card>
 

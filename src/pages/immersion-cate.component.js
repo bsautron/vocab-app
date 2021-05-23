@@ -8,10 +8,8 @@ import { gql, useQuery } from '@apollo/client'
 const GET_SENTENCES_QUERY = gql`
     query($category: String!) {
         getSentencesByCategory(category: $category) {
-            locales {
                 es
                 fr
-            }
         }
     }
 
@@ -40,12 +38,12 @@ export default function ImmersionCateScreen({ navigation, route }) {
         <TopNavigation title='Immersion par catégorie' alignment='center' accessoryLeft={BackAction} />
         <Divider />
         <Layout style={{ flex: 1, padding: 20 }}>
+            {category && <Image source={`http://localhost:3000/${category.image}`} style={styles.image} />}
             <Layout style={{ height: 80 }}>
                 <Layout style={styles.layout}>
-                    <Breadcrumb textEdit="Changer de catégorie" items={category ? category.locales.fr.split(', ') : []} onPress={navigateBack} />
+                    <Breadcrumb textEdit="Changer de catégorie" items={category ? category.fr.split(', ') : []} onPress={navigateBack} />
                 </Layout>
             </Layout>
-            {category && <Image source={category.image} style={styles.image} />}
             {!data?.getSentencesByCategory ? <Spinner /> : <ContextExampleList list={data.getSentencesByCategory} />}
 
         </Layout>
