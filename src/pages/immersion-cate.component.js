@@ -1,15 +1,16 @@
-import { Divider, Icon, Layout, TopNavigation, TopNavigationAction, Spinner } from '@ui-kitten/components';
+import { Divider, Icon, Layout, TopNavigation, TopNavigationAction, Spinner, Card } from '@ui-kitten/components';
 import React from 'react'
-import { Image, SafeAreaView, StyleSheet } from 'react-native';
+import { Image, SafeAreaView, StyleSheet, TouchableOpacity } from 'react-native';
 import ContextExampleList from '../components/context-example-list';
 import Breadcrumb from '../components/breadcrumb.component'
 import { gql, useQuery } from '@apollo/client'
+import { CardStyles } from '../styles';
 
 const GET_SENTENCES_QUERY = gql`
-    query($category: String!) {
-        getSentencesByCategory(category: $category) {
-                es
-                fr
+    query($categoryId: String!) {
+        sentences(filters: { category: { id: $categoryId } }) {
+            es
+            fr
         }
     }
 
@@ -25,7 +26,7 @@ export default function ImmersionCateScreen({ navigation, route }) {
 
     const { category } = route?.params || { category: null }
 
-    const { data } = useQuery(GET_SENTENCES_QUERY, { variables: { category: category?.slug || '' } });
+    const { loading, data } = useQuery(GET_SENTENCES_QUERY, { variables: { categoryId: category?.id || '' } });
 
     const navigateBack = () => {
         navigation.goBack();
@@ -44,8 +45,12 @@ export default function ImmersionCateScreen({ navigation, route }) {
                     <Breadcrumb textEdit="Changer de catégorie" items={category ? category.fr.split(', ') : []} onPress={navigateBack} />
                 </Layout>
             </Layout>
-            {!data?.getSentencesByCategory ? <Spinner /> : <ContextExampleList list={data.getSentencesByCategory} />}
-
+            {loading ? <Spinner /> : <ContextExampleList list={data?.sentences || []} />}
+            <TouchableOpacity>
+                <Card style={styles.plusCard}>
+                    <Icon style={{ with: 30, height: 30 }} name='plus-outline' />
+                </Card>
+            </TouchableOpacity>
         </Layout>
     </SafeAreaView>
 }
@@ -63,4 +68,8 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         alignSelf: 'center'
     },
+    plusCard: {
+        marginTop: 30,
+        ...CardStyles.cardDefault,
+    }
 })
