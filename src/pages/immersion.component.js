@@ -13,10 +13,12 @@ import { default as theme } from '../../theme.json';
 const CATEGORY_PREVIEW__QUERY = gql`
     query CategoryPreviewes($search: String!) {
         categoryPreviews(search: $search) {
+        slug
         es
-        fr,
+        fr
         image
         sentencePreviews {
+            id
             es
             fr
         }
@@ -25,9 +27,14 @@ const CATEGORY_PREVIEW__QUERY = gql`
 `
 
 export const ImmersionScreen = ({ navigation, route }) => {
-    const [inputText, setInputText] = useState('por favor')
+    const [inputText, setInputText] = useState('')
     const [indexesOpenCate, setIndexesOpenCate] = useState(new Set())
     const { data } = useQuery(CATEGORY_PREVIEW__QUERY, { variables: { search: inputText } })
+    const minSize = 2
+
+    useEffect(() => {
+        setIndexesOpenCate(new Set())
+    }, [inputText])
 
     const keyWords = inputText.split(' ').filter(s => !!s.length)
     return (
@@ -36,20 +43,21 @@ export const ImmersionScreen = ({ navigation, route }) => {
             <Divider />
             <Layout style={{ flex: 1 }}>
                 <ScrollView style={{ flex: 1 }}>
-                    <Layout style={{ padding: 20, alignItems: 'center' }}>
-                        <Layout style={{ marginBottom: 20 }}>
-                            <Text category='h5'>Vos premier instant en arrivant dans le pays</Text>
-                            <Text category='s1'>Voici ce don't vous aurez besoin pour commencer a parler au gens pour une immersion rapide et efficace</Text>
-                        </Layout>
+                    <Layout style={{ paddingTop: 20, marginBottom: 20, marginHorizontal: 15 }}>
+                        <Text category='h5'>Vos premier instant en arrivant dans le pays</Text>
+                        <Text category='s1'>Voici ce don't vous aurez besoin pour commencer a parler au gens pour une immersion rapide et efficace</Text>
                         <SubmitInput
-                            style={{ marginBottom: 30, flex: 1 }}
+                            style={{ marginVertical: 30, }}
+                            placeholder='Mots clés : bus plage ...'
                             value={inputText}
                             onChangeText={setInputText}
                             onPressSubmit={() => { }}
                             iconName='search-outline'
-
                         />
+                    </Layout>
+                    <Layout style={{ paddingHorizontal: 20, alignItems: 'stretch' }}>
                         {data?.categoryPreviews.map((c, i) => {
+                            const title = c.fr.split(', ')[1]
                             return <Card key={c.slug} style={styles.card}>
                                 <TouchableOpacity onPress={() => {
                                     const newSet = new Set(indexesOpenCate.values())
@@ -57,12 +65,12 @@ export const ImmersionScreen = ({ navigation, route }) => {
                                     else { newSet.add(i) }
                                     setIndexesOpenCate(newSet)
                                 }}>
-                                    <Text category='h5' style={styles.text}>{c.fr.split(', ')[1]}</Text>
+                                    <Text category='h5' style={styles.text}>{title[0].toUpperCase() + title.slice(1)}</Text>
                                     <Image source={`http://localhost:3000/${c.image}`} style={styles.image} />
 
                                     {
-                                        c.sentencePreviews.slice(0, indexesOpenCate.has(i) ? undefined : 1).map(s => {
-                                            return <View style={{ marginBottom: 10, flexDirection: 'column' }}>
+                                        c.sentencePreviews.slice(0, indexesOpenCate.has(i) ? undefined : 2).map(s => {
+                                            return <View key={s.id} style={{ marginBottom: 10, flexDirection: 'column' }}>
                                                 <HightlightText
                                                     category='p1'
                                                     text={`“${s.fr}”`}
@@ -78,19 +86,22 @@ export const ImmersionScreen = ({ navigation, route }) => {
 
                                         })
                                     }
-                                    <Layout style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-                                        {
-                                            indexesOpenCate.has(i) ?
-                                                <>
-                                                    <Text category="c1">Voir moin</Text>
-                                                    <Icon style={{ marginTop: 4, marginLeft: 5, width: 10, height: 10 }} name='arrowhead-up-outline' />
-                                                </> :
-                                                <>
-                                                    <Text category="c1">Voir plus</Text>
-                                                    <Icon style={{ marginTop: 4, marginLeft: 5, width: 10, height: 10 }} name='arrowhead-down-outline' />
-                                                </>
-                                        }
-                                    </Layout>
+                                    {
+                                        c.sentencePreviews.length > minSize &&
+                                        <Layout style={{ marginTop: 20, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
+                                            {
+                                                indexesOpenCate.has(i) ?
+                                                    <>
+                                                        <Text category="c1">Voir moin</Text>
+                                                        <Icon style={{ marginTop: 4, marginLeft: 5, width: 10, height: 10 }} name='arrowhead-up-outline' />
+                                                    </> :
+                                                    <>
+                                                        <Text category="c1">Voir {c.sentencePreviews.length - minSize} exemple{c.sentencePreviews.length - minSize > 1 ? 's' : ''} de plus</Text>
+                                                        <Icon style={{ marginTop: 4, marginLeft: 5, width: 10, height: 10 }} name='arrowhead-down-outline' />
+                                                    </>
+                                            }
+                                        </Layout>
+                                    }
                                 </TouchableOpacity>
                             </Card>
 
@@ -113,9 +124,7 @@ const styles = StyleSheet.create({
     },
     card: {
         ...CardStyles.cardDefault,
-        marginTop: 15,
-        marginBottom: 15,
-        width: 350,
+        marginBottom: 30,
     },
     image: {
         flex: 1,

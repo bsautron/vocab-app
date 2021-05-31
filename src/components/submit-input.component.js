@@ -9,6 +9,7 @@ export default function SubmitInput({
     disabled,
     iconName,
     label,
+    placeholder,
     ...props
 }) {
     const renderSubmitIcon = (iconProps) => {
@@ -21,6 +22,7 @@ export default function SubmitInput({
     const c = { ...props, style: { marginBottom: 15, ...props.style } }
     return <Input
         {...c}
+        placeholder={placeholder}
         value={value}
         label={label}
         disabled={disabled}

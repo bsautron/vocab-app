@@ -44,7 +44,7 @@ export function HightlightText({ category, text, hightlights, colorHighlight, co
         cursorIndex = index.startIndex + index.text.length
     }
 
-    retText.push(<Text style={{ color }} category={category}>
+    retText.push(<Text key={cursorIndex} style={{ color }} category={category}>
         {text.slice(cursorIndex)}
     </Text>)
 
