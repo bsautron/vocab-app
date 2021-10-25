@@ -27,6 +27,7 @@ export default function ImmersionCateScreen({ navigation, route }) {
     const { category } = route?.params || { category: null }
 
     const { loading, data } = useQuery(GET_SENTENCES_QUERY, { variables: { categoryId: category?.id || '' } });
+    console.log('data:', data) /* dump variable */
 
     const navigateBack = () => {
         navigation.goBack();

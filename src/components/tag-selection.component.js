@@ -8,6 +8,8 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 const SEARCH_TAG_QUERY = gql`
     query SearchTags($query: String!){
         searchTags(query: $query) {
+            fr
+            es
             slug
         }
     }

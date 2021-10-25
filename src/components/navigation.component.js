@@ -14,18 +14,18 @@ const BottomTabBar = ({ navigation, state }) => (
         selectedIndex={state.index}
         onSelect={index => navigation.navigate(state.routeNames[index])}>
         <BottomNavigationTab title='IMMERSION' />
-        <BottomNavigationTab title='PRATIQUER' />
-        <BottomNavigationTab title='DETAILS' />
-        <BottomNavigationTab title='DASHBOARD' />
+        {/* <BottomNavigationTab title='PRATIQUER' /> */}
+        {/* <BottomNavigationTab title='DETAILS' /> */}
+        {/* <BottomNavigationTab title='DASHBOARD' /> */}
     </BottomNavigation>
 );
 
 const HomeNavigator = () => (
     <Navigator headerMode='none' tabBar={props => <BottomTabBar {...props} />}>
         <Screen name='ImmersionStack' component={ImmersionStack} />
-        <Screen name='Pratiquer' component={PracticeScreen} />
-        <Screen name='Details' component={ContextScreen} />
-        <Screen name='Dashboard' component={HomeScreen} />
+        {/* <Screen name='Pratiquer' component={PracticeScreen} /> */}
+        {/* <Screen name='Details' component={ContextScreen} /> */}
+        {/* <Screen name='Dashboard' component={HomeScreen} /> */}
     </Navigator>
 );
 

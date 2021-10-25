@@ -2,9 +2,14 @@ import { Text } from '@ui-kitten/components'
 import React from 'react'
 import { View } from 'react-native'
 
+
+function normalize(str) {
+    return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+}
+
 export function HightlightText({ category, text, hightlights, colorHighlight, color }) {
     const indexes = hightlights.map(h => ({
-        startIndex: text.toLowerCase().indexOf(h.toLowerCase()),
+        startIndex: normalize(text).indexOf(normalize(h)),
         text: h,
     }))
         .sort((i1, i2) => i1.startIndex - i2.startIndex)
@@ -12,7 +17,7 @@ export function HightlightText({ category, text, hightlights, colorHighlight, co
 
 
     if (!indexes.length) {
-        return <Text style={{ color }} category={category}>
+        return <Text style={{ color, fontFamily: 'CHANGETHENAME_REGULAR' }} category={category}>
             {text}
         </Text>
     }
@@ -21,19 +26,19 @@ export function HightlightText({ category, text, hightlights, colorHighlight, co
     const retText = []
     for (const index of indexes) {
         retText.push(
-            <Text key={cursorIndex} style={{ color }} category={category}>
+            <Text key={`${text}-before-indexes-${cursorIndex}`} style={{ color, fontFamily: 'CHANGETHENAME_REGULAR' }} category={category}>
                 {text.slice(cursorIndex, index.startIndex)}
             </Text>
         )
 
         retText.push(
-            <View key={index.startIndex} style={{
+            <View key={`${text}-indexes-${index.startIndex}`} style={{
                 padding: 0,
                 margin: 0,
                 borderRadius: 5,
                 backgroundColor: colorHighlight
             }}>
-                <Text style={{ color }} category={category}>
+                <Text style={{ color, fontFamily: 'CHANGETHENAME_REGULAR' }} category={category}>
                     {text.slice(index.startIndex, index.startIndex + index.text.length)}
                 </Text>
 
@@ -44,7 +49,7 @@ export function HightlightText({ category, text, hightlights, colorHighlight, co
         cursorIndex = index.startIndex + index.text.length
     }
 
-    retText.push(<Text key={cursorIndex} style={{ color }} category={category}>
+    retText.push(<Text key={`${text}-after-indexes-${cursorIndex}`} style={{ color, fontFamily: 'CHANGETHENAME_REGULAR' }} category={category}>
         {text.slice(cursorIndex)}
     </Text>)
 
