@@ -7,8 +7,10 @@ import { default as theme } from './theme.json';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
-
 import { Lato_700Bold, Lato_300Light, Lato_400Regular } from '@expo-google-fonts/lato';
+import { DataContext } from './src/components/data-context.component';
+import database from './database.json'
+
 
 // Initialize Apollo Client
 const client = new ApolloClient({
@@ -16,13 +18,12 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
+
 export default function App() {
   const [loaded] = Font.useFonts({
     CHANGETHENAME_PRIMARY: Lato_700Bold,
     CHANGETHENAME_REGULAR: Lato_400Regular,
     CHANGETHENAME_SECONDARY: Lato_300Light,
-    // CHANGETHENAME_TITLE_PRIMARY: Lato_400Regular,
-    // CHANGETHENAME_TITLE_SECONDARY: Lato_300Regular
   });
 
   if (!loaded) {
@@ -32,7 +33,9 @@ export default function App() {
     <ApolloProvider client={client}>
       <IconRegistry icons={EvaIconsPack} />
       <ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
-        <AppNavigator />
+        <DataContext.Provider value={database}>
+          <AppNavigator />
+        </DataContext.Provider>
       </ApplicationProvider>
     </ApolloProvider>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout, Text } from "@ui-kitten/components";
 import { View } from 'react-native';
-import { HightlightText } from './highlight-text.component';
+import { HightlightText } from '../../components/highlight-text.component';
 
 
 // const mapImportantBoldText = primary => important => text => primary

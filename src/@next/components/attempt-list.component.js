@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Attempt from './attempt.component'
+import Attempt from '../../components/attempt.component'
 import { Layout } from '@ui-kitten/components'
 
 /**

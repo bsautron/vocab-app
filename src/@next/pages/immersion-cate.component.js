@@ -4,7 +4,7 @@ import { Image, SafeAreaView, StyleSheet, TouchableOpacity } from 'react-native'
 import ContextExampleList from '../components/context-example-list';
 import Breadcrumb from '../components/breadcrumb.component'
 import { gql, useQuery } from '@apollo/client'
-import { CardStyles } from '../styles';
+import { CardStyles } from '../../styles';
 
 const GET_SENTENCES_QUERY = gql`
     query($categoryId: String!) {

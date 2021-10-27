@@ -1,11 +1,8 @@
 import { Text } from '@ui-kitten/components'
 import React from 'react'
 import { View } from 'react-native'
+import { normalize } from '../utils'
 
-
-function normalize(str) {
-    return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-}
 
 export function HightlightText({ category, text, hightlights, colorHighlight, color }) {
     const indexes = hightlights.map(h => ({

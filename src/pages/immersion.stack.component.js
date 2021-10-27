@@ -1,10 +1,6 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
-import { Divider, Icon, Layout, Text, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
-
 import { createStackNavigator } from '@react-navigation/stack';
 import { ImmersionScreen } from './immersion.component';
-import ImmersionCateScreen from './immersion-cate.component';
 
 
 const Stack = createStackNavigator();
@@ -32,7 +28,6 @@ export default function ImmersionStack({ navigation, route }) {
     return (
         <Stack.Navigator headerMode='none' initialRouteName="Immersion">
             <Stack.Screen name="Immersion" component={ImmersionScreen} />
-            <Stack.Screen name="ImmersionCate" component={ImmersionCateScreen} />
         </Stack.Navigator>
     );
 };

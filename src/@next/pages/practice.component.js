@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { Card, Divider, Icon, Layout, Text, TopNavigation, Tooltip, Autocomplete, AutocompleteItem, Modal, Button } from '@ui-kitten/components';
 import { gql, useQuery, useLazyQuery } from '@apollo/client'
-import { CardStyles } from '../styles'
+import { CardStyles } from '../../styles'
 import Translation from '../components/translation.component';
 import TagSelection from '../components/tag-selection.component';
 

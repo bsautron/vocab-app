@@ -1,7 +1,7 @@
 import { Button, Card, Icon } from '@ui-kitten/components'
 import React, { useEffect, useState } from 'react'
 import { StyleSheet } from 'react-native'
-import { CardStyles } from '../styles'
+import { CardStyles } from '../../styles'
 import AttemptList from './attempt-list.component'
 import ContextTrad from './context-trad.component'
 import TranslationInput from './translation-input.component'

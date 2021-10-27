@@ -1,6 +1,6 @@
 import { Layout } from '@ui-kitten/components'
 import React from 'react'
-import ContextExample from './context-example.component'
+import ContextExample from '../../components/context-example.component'
 
 export default function ContextExampleList({ list }) {
     return <Layout>
