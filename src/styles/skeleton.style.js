@@ -1,5 +1,5 @@
 export const textSkeleton = {
-    backgroundColor: '#eeeeee',
-    alignSelf: 'center',
-    borderRadius: 50
-}
+  backgroundColor: "#eeeeee",
+  alignSelf: "center",
+  borderRadius: 50,
+};

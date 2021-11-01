@@ -1,1704 +1,1214 @@
 {
-    "dic": [
-        {
-            "fr": "louer",
-            "es": "alquilar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "aider",
-            "es": "ayudar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "danser",
-            "es": "bailar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "cuisiner",
-            "es": "cocinar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "répondre",
-            "es": "contestar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "devoir",
-            "es": "deber",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "laisser",
-            "es": "dejar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "descansar",
-            "es": "descansar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "désirer",
-            "es": "desear",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "dessiner",
-            "es": "dibujar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "écouter",
-            "es": "escuchar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "parler",
-            "es": "hablar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "arriver",
-            "es": "llegar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "porter",
-            "es": "llevar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "tuer",
-            "es": "matar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "mélanger",
-            "es": "mezclar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "monter",
-            "es": "montar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "nager",
-            "es": "nadar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "avoir besoin de",
-            "es": "necesitar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "partir",
-            "es": "partir",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "promener",
-            "es": "pasear",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "préparer",
-            "es": "preparar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "briser",
-            "es": "romper",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "saluer",
-            "es": "saludar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "craindre",
-            "es": "temer",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "toucher",
-            "es": "tocar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "prendre",
-            "es": "tomar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "travailler",
-            "es": "trabajar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "vendre",
-            "es": "vender",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "visiter",
-            "es": "visitar",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "apprendre",
-            "es": "aprender",
-            "tags": [
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "quoi",
-            "es": "qué",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "qui (singulier)",
-            "es": "quién",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "qui (pluriel)",
-            "es": "quiénes",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "comment",
-            "es": "cómo",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "quand",
-            "es": "cuándo",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "quel / quelle",
-            "es": "cuál",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "quels / quelles",
-            "es": "cuáles",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "combien (masculin)",
-            "es": "cuánto",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "combien (féminin)",
-            "es": "cuánta",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "combien (féminin pluriel)",
-            "es": "cuántas",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "combien (masculin pluriel)",
-            "es": "cuántos",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "où",
-            "es": "dónde",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "pourquoi (pour quelle raison)",
-            "es": "por qué",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "pourquoi (dans quel but)",
-            "es": "para qué",
-            "tags": [
-                "question/basicos"
-            ]
-        },
-        {
-            "fr": "les vêtements",
-            "es": "la ropa",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le manteau",
-            "es": "el abrigo",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le blouson",
-            "es": "la cazadora",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le pantalon",
-            "es": "el pantalón",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le pull-over",
-            "es": "el suéter / el jersey",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "un gilet",
-            "es": "un chaleco",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le survêtement",
-            "es": "chándal",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le costume",
-            "es": "el traje",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "la robe",
-            "es": "el vestido",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le chemisier",
-            "es": "la blusa",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "la chemise",
-            "es": "la camisa",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le T-shirt",
-            "es": "la camiseta",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "la veste",
-            "es": "la chaqueta",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "la cravate",
-            "es": "la corbata",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "la jupe",
-            "es": "la falda",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le short",
-            "es": "el corto",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "le pyjama",
-            "es": "el pijama",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "s’habiller",
-            "es": "vestirse",
-            "tags": [
-                "ropa/comun",
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "se déshabiller",
-            "es": "desnudarse",
-            "tags": [
-                "ropa/comun",
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "essayer",
-            "es": "probar",
-            "tags": [
-                "ropa/comun",
-                "verbo/regular"
-            ]
-        },
-        {
-            "fr": "faire les magasins",
-            "es": "ir de tiendas",
-            "tags": [
-                "ropa/comun"
-            ]
-        },
-        {
-            "fr": "acheter",
-            "es": "comprar",
-            "tags": [
-                "ropa/comun",
-                "verbo/regular"
-            ]
-        },
-        {
-            "es": "la ropa interior",
-            "fr": "Les sous-vêtements",
-            "tags": [
-                "ropa/interior"
-            ]
-        },
-        {
-            "es": "los calcetines",
-            "fr": "les chaussettes",
-            "tags": [
-                "ropa/interior"
-            ]
-        },
-        {
-            "es": "las medias",
-            "fr": "les collants",
-            "tags": [
-                "ropa/interior"
-            ]
-        },
-        {
-            "es": "los calzoncillos",
-            "fr": "le slip / le caleçon",
-            "tags": [
-                "ropa/interior"
-            ]
-        },
-        {
-            "es": "las bragas",
-            "fr": "la culotte",
-            "tags": [
-                "ropa/interior"
-            ]
-        },
-        {
-            "es": "el sostén / el brasier / el sujetador",
-            "fr": "le soutien-gorge",
-            "tags": [
-                "ropa/interior"
-            ]
-        },
-        {
-            "es": "los complementos",
-            "fr": "les accessoires",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "el cinturón",
-            "fr": "la ceinture",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "las gafas",
-            "fr": "les lunettes",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "los guantes",
-            "fr": "les gants",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "la bufanda​",
-            "fr": "l’écharpe",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "la corbata",
-            "fr": "la cravate",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "la billetera",
-            "fr": "le portefeuille",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "el sombrero​",
-            "fr": "le chapeau",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "el gorro",
-            "fr": "le bonnet",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "la gorra",
-            "fr": "la casquette",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "la boina",
-            "fr": "le béret",
-            "tags": [
-                "ropa/complementos"
-            ]
-        },
-        {
-            "es": "los zapatos",
-            "fr": "Les chaussures",
-            "tags": [
-                "ropa/zapatos"
-            ]
-        },
-        {
-            "es": "las botas",
-            "fr": "les bottes",
-            "tags": [
-                "ropa/zapatos"
-            ]
-        },
-        {
-            "es": "los zapatos de tacón",
-            "fr": "les chaussures à talon",
-            "tags": [
-                "ropa/zapatos"
-            ]
-        },
-        {
-            "es": "las sandalias",
-            "fr": "les sandales",
-            "tags": [
-                "ropa/zapatos"
-            ]
-        },
-        {
-            "es": "las chanclas",
-            "fr": "les tongs",
-            "tags": [
-                "ropa/zapatos"
-            ]
-        },
-        {
-            "es": "las zapatillas de deporte",
-            "fr": "les chaussures de sport",
-            "tags": [
-                "ropa/zapatos"
-            ]
-        },
-        {
-            "es": "las pantuflas",
-            "fr": "les pantoufles",
-            "tags": [
-                "ropa/zapatos"
-            ]
-        },
-        {
-            "es": "calzarse",
-            "fr": "se chausser",
-            "tags": [
-                "ropa/zapatos",
-                "verbo/regular"
-            ]
-        },
-        {
-            "es": "descalzarse",
-            "fr": "se déchausser",
-            "tags": [
-                "ropa/zapatos",
-                "verbo/regular"
-            ]
-        },
-        {
-            "es": "las joyas",
-            "fr": "Les bijoux",
-            "tags": [
-                "ropa/joyas"
-            ]
-        },
-        {
-            "es": "el anillo",
-            "fr": "la bague",
-            "tags": [
-                "ropa/joyas"
-            ]
-        },
-        {
-            "es": "el arete / el pendiente",
-            "fr": "la boucle d’oreille",
-            "tags": [
-                "ropa/joyas"
-            ]
-        },
-        {
-            "es": "el reloj",
-            "fr": "la montre",
-            "tags": [
-                "ropa/joyas"
-            ]
-        },
-        {
-            "es": "el collar",
-            "fr": "le collier",
-            "tags": [
-                "ropa/joyas"
-            ]
-        },
-        {
-            "es": "la pulsera",
-            "fr": "le bracelet",
-            "tags": [
-                "ropa/joyas"
-            ]
-        },
-        {
-            "es": "las formas",
-            "fr": "Les formes",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "de manga corta",
-            "fr": "à manches courtes",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "de manga larga",
-            "fr": "à manches longues",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "de cuello vuelto",
-            "fr": "à col roulé",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "un escotado",
-            "fr": "un décolleté",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "ancho",
-            "fr": "large",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "estrecho",
-            "fr": "serré",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "estampado",
-            "fr": "imprimé",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "liso",
-            "fr": "uni",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "de cuadros",
-            "fr": "à carreaux",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "de flores",
-            "fr": "à fleurs",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "de lunares",
-            "fr": "à pois",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "de rayas",
-            "fr": "à rayures",
-            "tags": [
-                "ropa/formas"
-            ]
-        },
-        {
-            "es": "La cabeza",
-            "fr": "la tête",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "la cara",
-            "fr": "le visage",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "la barbilla / el mentón",
-            "fr": "le menton",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "la boca",
-            "fr": "la bouche",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "la ceja",
-            "fr": "le sourcil",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "el cerebro",
-            "fr": "le cerveau",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "las encías",
-            "fr": "les gencives",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "el frente",
-            "fr": "le front",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "el labio",
-            "fr": "la lèvre",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "la mandíbula",
-            "fr": "la mâchoire",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "la mejilla",
-            "fr": "la joue",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "la nariz",
-            "fr": "le nez",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "el ojo",
-            "fr": "l’oeil",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "la oreja",
-            "fr": "l’oreille",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "el párpado",
-            "fr": "la paupière",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "el pelo",
-            "fr": "les cheveux",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "las pestañas",
-            "fr": "les cils",
-            "tags": [
-                "cuerpo/cabeza"
-            ]
-        },
-        {
-            "es": "El cuerpo",
-            "fr": "le corps",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la barriga",
-            "fr": "le ventre",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el brazo",
-            "fr": "le bras",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la cadera",
-            "fr": "la hanche",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el codo",
-            "fr": "le coude",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el corazón",
-            "fr": "le coeur",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el cráneo",
-            "fr": "le crâne",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el cuello",
-            "fr": "le cou",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el dedo",
-            "fr": "le doigt",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "los dientes",
-            "fr": "les dents",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la espalda",
-            "fr": "le dos",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el hombro",
-            "fr": "l’épaule",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la mano",
-            "fr": "la main",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la muñeca",
-            "fr": "le poignet",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el muslo",
-            "fr": "la cuisse",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la nalga",
-            "fr": "la fesse",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el ombligo",
-            "fr": "le nombril",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la pantorrilla",
-            "fr": "le mollet",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el pecho",
-            "fr": "la poitrine",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "los pelos",
-            "fr": "les poils",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el pie",
-            "fr": "le pied",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la piel",
-            "fr": "la peau",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la pierna",
-            "fr": "la jambe",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la rodilla",
-            "fr": "le genou",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "el tobillo",
-            "fr": "la cheville",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "la uña",
-            "fr": "l’ongle",
-            "tags": [
-                "cuerpo/cuerpo"
-            ]
-        },
-        {
-            "es": "los colores",
-            "fr": "Les couleurs ",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "amarillo",
-            "fr": "jaune",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "azul",
-            "fr": "bleu",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "azul turquesa",
-            "fr": "bleu turquoise",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "beige",
-            "fr": "beige",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "blanco",
-            "fr": "blanc",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "caqui",
-            "fr": "kaki",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "dorado",
-            "fr": "doré",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "gris",
-            "fr": "gris",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "marrón",
-            "fr": "marron",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "naranja",
-            "fr": "orange",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "negro",
-            "fr": "noir",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "plateado",
-            "fr": "argenté",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "rojo",
-            "fr": "rouge",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "rosa",
-            "fr": "rose",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "verde",
-            "fr": "vert",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "violeta",
-            "fr": "violet",
-            "tags": [
-                "colors/comun"
-            ]
-        },
-        {
-            "es": "los matices",
-            "fr": "Les nuances",
-            "tags": [
-                "colors/matices"
-            ]
-        },
-        {
-            "es": "oscuro",
-            "fr": "foncé",
-            "tags": [
-                "colors/matices"
-            ]
-        },
-        {
-            "es": "claro",
-            "fr": "clair",
-            "tags": [
-                "colors/matices"
-            ]
-        },
-        {
-            "es": "las personas",
-            "fr": "Les personnes",
-            "tags": [
-                "descripcion-fisica/personas"
-            ]
-        },
-        {
-            "es": "un bebé",
-            "fr": "un bébé",
-            "tags": [
-                "descripcion-fisica/personas"
-            ]
-        },
-        {
-            "es": "un niño",
-            "fr": "un enfant",
-            "tags": [
-                "descripcion-fisica/personas"
-            ]
-        },
-        {
-            "es": "un adolescente",
-            "fr": "un adolescent",
-            "tags": [
-                "descripcion-fisica/personas"
-            ]
-        },
-        {
-            "es": "un adulto",
-            "fr": "un adulte",
-            "tags": [
-                "descripcion-fisica/personas"
-            ]
-        },
-        {
-            "es": "joven",
-            "fr": "jeune",
-            "tags": [
-                "descripcion-fisica/personas"
-            ]
-        },
-        {
-            "es": "viejo",
-            "fr": "vieux",
-            "tags": [
-                "descripcion-fisica/personas"
-            ]
-        },
-        {
-            "es": "la belleza",
-            "fr": "La beauté",
-            "tags": [
-                "descripcion-fisica/belleza"
-            ]
-        },
-        {
-            "es": "guapo",
-            "fr": "beau",
-            "tags": [
-                "descripcion-fisica/belleza"
-            ]
-        },
-        {
-            "es": "hermoso",
-            "fr": "très beau",
-            "tags": [
-                "descripcion-fisica/belleza"
-            ]
-        },
-        {
-            "es": "feo",
-            "fr": "moche",
-            "tags": [
-                "descripcion-fisica/belleza"
-            ]
-        },
-        {
-            "es": "el pelo",
-            "fr": "Les cheveux",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "rubio",
-            "fr": "blond",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "moreno",
-            "fr": "brun",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "pelirrojo",
-            "fr": "roux",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "el pelo corto",
-            "fr": "les cheveux courts",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "el pelo largo",
-            "fr": "les cheveux longs",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "el pelo lacio",
-            "fr": "les cheveux raides",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "el pelo rizado",
-            "fr": "les cheveux frisés",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "ser calvo",
-            "fr": "être chauve",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "un flequillo",
-            "fr": "une frange",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "trenzas",
-            "fr": "des nattes",
-            "tags": [
-                "descripcion-fisica/pelo"
-            ]
-        },
-        {
-            "es": "el color de los ojos",
-            "fr": "La couleur des yeux",
-            "tags": [
-                "descripcion-fisica/ojos"
-            ]
-        },
-        {
-            "es": "azules",
-            "fr": "bleus",
-            "tags": [
-                "descripcion-fisica/ojos"
-            ]
-        },
-        {
-            "es": "marrones ",
-            "fr": "marrons",
-            "tags": [
-                "descripcion-fisica/ojos"
-            ]
-        },
-        {
-            "es": "verdes ",
-            "fr": "verts",
-            "tags": [
-                "descripcion-fisica/ojos"
-            ]
-        },
-        {
-            "es": "negros",
-            "fr": "noirs",
-            "tags": [
-                "descripcion-fisica/ojos"
-            ]
-        },
-        {
-            "es": "la estatura y la talla",
-            "fr": "La stature et la taille",
-            "tags": [
-                "descripcion-fisica/estatura-talla"
-            ]
-        },
-        {
-            "es": "alto",
-            "fr": "grand",
-            "tags": [
-                "descripcion-fisica/estatura-talla"
-            ]
-        },
-        {
-            "es": "bajo",
-            "fr": "petit",
-            "tags": [
-                "descripcion-fisica/estatura-talla"
-            ]
-        },
-        {
-            "es": "delgado",
-            "fr": "maigre",
-            "tags": [
-                "descripcion-fisica/estatura-talla"
-            ]
-        },
-        {
-            "es": "esbelto",
-            "fr": "mince",
-            "tags": [
-                "descripcion-fisica/estatura-talla"
-            ]
-        },
-        {
-            "es": "gordo",
-            "fr": "gros",
-            "tags": [
-                "descripcion-fisica/estatura-talla"
-            ]
-        },
-        {
-            "es": "los rasgos físicos",
-            "fr": "Les traits physiques",
-            "tags": [
-                "descripcion-fisica/rasgos-fiscos"
-            ]
-        },
-        {
-            "es": "el color de la piel​",
-            "fr": "le teint",
-            "tags": [
-                "descripcion-fisica/rasgos-fiscos"
-            ]
-        },
-        {
-            "es": "las pecas",
-            "fr": "les taches de rousseur",
-            "tags": [
-                "descripcion-fisica/rasgos-fiscos"
-            ]
-        },
-        {
-            "es": "un bigote",
-            "fr": "une moustache",
-            "tags": [
-                "descripcion-fisica/rasgos-fiscos"
-            ]
-        },
-        {
-            "es": "una barba",
-            "fr": "une barbe",
-            "tags": [
-                "descripcion-fisica/rasgos-fiscos"
-            ]
-        },
-        {
-            "es": "el carácter",
-            "fr": "Le caractère",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "simpático",
-            "fr": "sympathique",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "antipático",
-            "fr": "antipathique",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "reservado",
-            "fr": "réservé",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "tímido",
-            "fr": "timide",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "hablador",
-            "fr": "bavard",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "nervioso",
-            "fr": "nerveux",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "tranquilo",
-            "fr": "tranquille",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "calmado",
-            "fr": "calme",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "serio",
-            "fr": "sérieux",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "optimista",
-            "fr": "optimiste",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "pesimista",
-            "fr": "pessimiste",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "educado",
-            "fr": "poli",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "maleducado",
-            "fr": "impoli",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "divertido",
-            "fr": "drôle",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "feliz",
-            "fr": "heureux",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "desgraciado",
-            "fr": "malheureux",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "contento",
-            "fr": "content",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "triste​",
-            "fr": "triste",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "idiota",
-            "fr": "idiot",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "tonto",
-            "fr": "bête",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "inteligente",
-            "fr": "intelligent",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "tener sentido del humor",
-            "fr": "avoir le sens de l’humour",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "tener buen carácter",
-            "fr": "avoir bon caractère",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "tener mal carácter",
-            "fr": "avoir mauvais caractère",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "fruncir el ceño",
-            "fr": "froncer les sourcils",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "sonreir",
-            "fr": "sourire",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "reir",
-            "fr": "rire",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        },
-        {
-            "es": "llorar",
-            "fr": "pleurer",
-            "tags": [
-                "descripcion-fisica/caracter"
-            ]
-        }
-    ]
+  "dic": [
+    {
+      "fr": "louer",
+      "es": "alquilar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "aider",
+      "es": "ayudar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "danser",
+      "es": "bailar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "cuisiner",
+      "es": "cocinar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "répondre",
+      "es": "contestar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "devoir",
+      "es": "deber",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "laisser",
+      "es": "dejar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "descansar",
+      "es": "descansar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "désirer",
+      "es": "desear",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "dessiner",
+      "es": "dibujar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "écouter",
+      "es": "escuchar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "parler",
+      "es": "hablar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "arriver",
+      "es": "llegar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "porter",
+      "es": "llevar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "tuer",
+      "es": "matar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "mélanger",
+      "es": "mezclar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "monter",
+      "es": "montar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "nager",
+      "es": "nadar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "avoir besoin de",
+      "es": "necesitar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "partir",
+      "es": "partir",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "promener",
+      "es": "pasear",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "préparer",
+      "es": "preparar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "briser",
+      "es": "romper",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "saluer",
+      "es": "saludar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "craindre",
+      "es": "temer",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "toucher",
+      "es": "tocar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "prendre",
+      "es": "tomar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "travailler",
+      "es": "trabajar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "vendre",
+      "es": "vender",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "visiter",
+      "es": "visitar",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "apprendre",
+      "es": "aprender",
+      "tags": ["verbo/regular"]
+    },
+    {
+      "fr": "quoi",
+      "es": "qué",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "qui (singulier)",
+      "es": "quién",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "qui (pluriel)",
+      "es": "quiénes",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "comment",
+      "es": "cómo",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "quand",
+      "es": "cuándo",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "quel / quelle",
+      "es": "cuál",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "quels / quelles",
+      "es": "cuáles",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "combien (masculin)",
+      "es": "cuánto",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "combien (féminin)",
+      "es": "cuánta",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "combien (féminin pluriel)",
+      "es": "cuántas",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "combien (masculin pluriel)",
+      "es": "cuántos",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "où",
+      "es": "dónde",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "pourquoi (pour quelle raison)",
+      "es": "por qué",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "pourquoi (dans quel but)",
+      "es": "para qué",
+      "tags": ["question/basicos"]
+    },
+    {
+      "fr": "les vêtements",
+      "es": "la ropa",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le manteau",
+      "es": "el abrigo",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le blouson",
+      "es": "la cazadora",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le pantalon",
+      "es": "el pantalón",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le pull-over",
+      "es": "el suéter / el jersey",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "un gilet",
+      "es": "un chaleco",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le survêtement",
+      "es": "chándal",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le costume",
+      "es": "el traje",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "la robe",
+      "es": "el vestido",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le chemisier",
+      "es": "la blusa",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "la chemise",
+      "es": "la camisa",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le T-shirt",
+      "es": "la camiseta",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "la veste",
+      "es": "la chaqueta",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "la cravate",
+      "es": "la corbata",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "la jupe",
+      "es": "la falda",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le short",
+      "es": "el corto",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "le pyjama",
+      "es": "el pijama",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "s’habiller",
+      "es": "vestirse",
+      "tags": ["ropa/comun", "verbo/regular"]
+    },
+    {
+      "fr": "se déshabiller",
+      "es": "desnudarse",
+      "tags": ["ropa/comun", "verbo/regular"]
+    },
+    {
+      "fr": "essayer",
+      "es": "probar",
+      "tags": ["ropa/comun", "verbo/regular"]
+    },
+    {
+      "fr": "faire les magasins",
+      "es": "ir de tiendas",
+      "tags": ["ropa/comun"]
+    },
+    {
+      "fr": "acheter",
+      "es": "comprar",
+      "tags": ["ropa/comun", "verbo/regular"]
+    },
+    {
+      "es": "la ropa interior",
+      "fr": "Les sous-vêtements",
+      "tags": ["ropa/interior"]
+    },
+    {
+      "es": "los calcetines",
+      "fr": "les chaussettes",
+      "tags": ["ropa/interior"]
+    },
+    {
+      "es": "las medias",
+      "fr": "les collants",
+      "tags": ["ropa/interior"]
+    },
+    {
+      "es": "los calzoncillos",
+      "fr": "le slip / le caleçon",
+      "tags": ["ropa/interior"]
+    },
+    {
+      "es": "las bragas",
+      "fr": "la culotte",
+      "tags": ["ropa/interior"]
+    },
+    {
+      "es": "el sostén / el brasier / el sujetador",
+      "fr": "le soutien-gorge",
+      "tags": ["ropa/interior"]
+    },
+    {
+      "es": "los complementos",
+      "fr": "les accessoires",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "el cinturón",
+      "fr": "la ceinture",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "las gafas",
+      "fr": "les lunettes",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "los guantes",
+      "fr": "les gants",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "la bufanda​",
+      "fr": "l’écharpe",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "la corbata",
+      "fr": "la cravate",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "la billetera",
+      "fr": "le portefeuille",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "el sombrero​",
+      "fr": "le chapeau",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "el gorro",
+      "fr": "le bonnet",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "la gorra",
+      "fr": "la casquette",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "la boina",
+      "fr": "le béret",
+      "tags": ["ropa/complementos"]
+    },
+    {
+      "es": "los zapatos",
+      "fr": "Les chaussures",
+      "tags": ["ropa/zapatos"]
+    },
+    {
+      "es": "las botas",
+      "fr": "les bottes",
+      "tags": ["ropa/zapatos"]
+    },
+    {
+      "es": "los zapatos de tacón",
+      "fr": "les chaussures à talon",
+      "tags": ["ropa/zapatos"]
+    },
+    {
+      "es": "las sandalias",
+      "fr": "les sandales",
+      "tags": ["ropa/zapatos"]
+    },
+    {
+      "es": "las chanclas",
+      "fr": "les tongs",
+      "tags": ["ropa/zapatos"]
+    },
+    {
+      "es": "las zapatillas de deporte",
+      "fr": "les chaussures de sport",
+      "tags": ["ropa/zapatos"]
+    },
+    {
+      "es": "las pantuflas",
+      "fr": "les pantoufles",
+      "tags": ["ropa/zapatos"]
+    },
+    {
+      "es": "calzarse",
+      "fr": "se chausser",
+      "tags": ["ropa/zapatos", "verbo/regular"]
+    },
+    {
+      "es": "descalzarse",
+      "fr": "se déchausser",
+      "tags": ["ropa/zapatos", "verbo/regular"]
+    },
+    {
+      "es": "las joyas",
+      "fr": "Les bijoux",
+      "tags": ["ropa/joyas"]
+    },
+    {
+      "es": "el anillo",
+      "fr": "la bague",
+      "tags": ["ropa/joyas"]
+    },
+    {
+      "es": "el arete / el pendiente",
+      "fr": "la boucle d’oreille",
+      "tags": ["ropa/joyas"]
+    },
+    {
+      "es": "el reloj",
+      "fr": "la montre",
+      "tags": ["ropa/joyas"]
+    },
+    {
+      "es": "el collar",
+      "fr": "le collier",
+      "tags": ["ropa/joyas"]
+    },
+    {
+      "es": "la pulsera",
+      "fr": "le bracelet",
+      "tags": ["ropa/joyas"]
+    },
+    {
+      "es": "las formas",
+      "fr": "Les formes",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "de manga corta",
+      "fr": "à manches courtes",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "de manga larga",
+      "fr": "à manches longues",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "de cuello vuelto",
+      "fr": "à col roulé",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "un escotado",
+      "fr": "un décolleté",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "ancho",
+      "fr": "large",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "estrecho",
+      "fr": "serré",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "estampado",
+      "fr": "imprimé",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "liso",
+      "fr": "uni",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "de cuadros",
+      "fr": "à carreaux",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "de flores",
+      "fr": "à fleurs",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "de lunares",
+      "fr": "à pois",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "de rayas",
+      "fr": "à rayures",
+      "tags": ["ropa/formas"]
+    },
+    {
+      "es": "La cabeza",
+      "fr": "la tête",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "la cara",
+      "fr": "le visage",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "la barbilla / el mentón",
+      "fr": "le menton",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "la boca",
+      "fr": "la bouche",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "la ceja",
+      "fr": "le sourcil",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "el cerebro",
+      "fr": "le cerveau",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "las encías",
+      "fr": "les gencives",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "el frente",
+      "fr": "le front",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "el labio",
+      "fr": "la lèvre",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "la mandíbula",
+      "fr": "la mâchoire",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "la mejilla",
+      "fr": "la joue",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "la nariz",
+      "fr": "le nez",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "el ojo",
+      "fr": "l’oeil",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "la oreja",
+      "fr": "l’oreille",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "el párpado",
+      "fr": "la paupière",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "el pelo",
+      "fr": "les cheveux",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "las pestañas",
+      "fr": "les cils",
+      "tags": ["cuerpo/cabeza"]
+    },
+    {
+      "es": "El cuerpo",
+      "fr": "le corps",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la barriga",
+      "fr": "le ventre",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el brazo",
+      "fr": "le bras",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la cadera",
+      "fr": "la hanche",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el codo",
+      "fr": "le coude",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el corazón",
+      "fr": "le coeur",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el cráneo",
+      "fr": "le crâne",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el cuello",
+      "fr": "le cou",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el dedo",
+      "fr": "le doigt",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "los dientes",
+      "fr": "les dents",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la espalda",
+      "fr": "le dos",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el hombro",
+      "fr": "l’épaule",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la mano",
+      "fr": "la main",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la muñeca",
+      "fr": "le poignet",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el muslo",
+      "fr": "la cuisse",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la nalga",
+      "fr": "la fesse",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el ombligo",
+      "fr": "le nombril",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la pantorrilla",
+      "fr": "le mollet",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el pecho",
+      "fr": "la poitrine",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "los pelos",
+      "fr": "les poils",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el pie",
+      "fr": "le pied",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la piel",
+      "fr": "la peau",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la pierna",
+      "fr": "la jambe",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la rodilla",
+      "fr": "le genou",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "el tobillo",
+      "fr": "la cheville",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "la uña",
+      "fr": "l’ongle",
+      "tags": ["cuerpo/cuerpo"]
+    },
+    {
+      "es": "los colores",
+      "fr": "Les couleurs ",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "amarillo",
+      "fr": "jaune",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "azul",
+      "fr": "bleu",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "azul turquesa",
+      "fr": "bleu turquoise",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "beige",
+      "fr": "beige",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "blanco",
+      "fr": "blanc",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "caqui",
+      "fr": "kaki",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "dorado",
+      "fr": "doré",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "gris",
+      "fr": "gris",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "marrón",
+      "fr": "marron",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "naranja",
+      "fr": "orange",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "negro",
+      "fr": "noir",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "plateado",
+      "fr": "argenté",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "rojo",
+      "fr": "rouge",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "rosa",
+      "fr": "rose",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "verde",
+      "fr": "vert",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "violeta",
+      "fr": "violet",
+      "tags": ["colors/comun"]
+    },
+    {
+      "es": "los matices",
+      "fr": "Les nuances",
+      "tags": ["colors/matices"]
+    },
+    {
+      "es": "oscuro",
+      "fr": "foncé",
+      "tags": ["colors/matices"]
+    },
+    {
+      "es": "claro",
+      "fr": "clair",
+      "tags": ["colors/matices"]
+    },
+    {
+      "es": "las personas",
+      "fr": "Les personnes",
+      "tags": ["descripcion-fisica/personas"]
+    },
+    {
+      "es": "un bebé",
+      "fr": "un bébé",
+      "tags": ["descripcion-fisica/personas"]
+    },
+    {
+      "es": "un niño",
+      "fr": "un enfant",
+      "tags": ["descripcion-fisica/personas"]
+    },
+    {
+      "es": "un adolescente",
+      "fr": "un adolescent",
+      "tags": ["descripcion-fisica/personas"]
+    },
+    {
+      "es": "un adulto",
+      "fr": "un adulte",
+      "tags": ["descripcion-fisica/personas"]
+    },
+    {
+      "es": "joven",
+      "fr": "jeune",
+      "tags": ["descripcion-fisica/personas"]
+    },
+    {
+      "es": "viejo",
+      "fr": "vieux",
+      "tags": ["descripcion-fisica/personas"]
+    },
+    {
+      "es": "la belleza",
+      "fr": "La beauté",
+      "tags": ["descripcion-fisica/belleza"]
+    },
+    {
+      "es": "guapo",
+      "fr": "beau",
+      "tags": ["descripcion-fisica/belleza"]
+    },
+    {
+      "es": "hermoso",
+      "fr": "très beau",
+      "tags": ["descripcion-fisica/belleza"]
+    },
+    {
+      "es": "feo",
+      "fr": "moche",
+      "tags": ["descripcion-fisica/belleza"]
+    },
+    {
+      "es": "el pelo",
+      "fr": "Les cheveux",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "rubio",
+      "fr": "blond",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "moreno",
+      "fr": "brun",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "pelirrojo",
+      "fr": "roux",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "el pelo corto",
+      "fr": "les cheveux courts",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "el pelo largo",
+      "fr": "les cheveux longs",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "el pelo lacio",
+      "fr": "les cheveux raides",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "el pelo rizado",
+      "fr": "les cheveux frisés",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "ser calvo",
+      "fr": "être chauve",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "un flequillo",
+      "fr": "une frange",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "trenzas",
+      "fr": "des nattes",
+      "tags": ["descripcion-fisica/pelo"]
+    },
+    {
+      "es": "el color de los ojos",
+      "fr": "La couleur des yeux",
+      "tags": ["descripcion-fisica/ojos"]
+    },
+    {
+      "es": "azules",
+      "fr": "bleus",
+      "tags": ["descripcion-fisica/ojos"]
+    },
+    {
+      "es": "marrones ",
+      "fr": "marrons",
+      "tags": ["descripcion-fisica/ojos"]
+    },
+    {
+      "es": "verdes ",
+      "fr": "verts",
+      "tags": ["descripcion-fisica/ojos"]
+    },
+    {
+      "es": "negros",
+      "fr": "noirs",
+      "tags": ["descripcion-fisica/ojos"]
+    },
+    {
+      "es": "la estatura y la talla",
+      "fr": "La stature et la taille",
+      "tags": ["descripcion-fisica/estatura-talla"]
+    },
+    {
+      "es": "alto",
+      "fr": "grand",
+      "tags": ["descripcion-fisica/estatura-talla"]
+    },
+    {
+      "es": "bajo",
+      "fr": "petit",
+      "tags": ["descripcion-fisica/estatura-talla"]
+    },
+    {
+      "es": "delgado",
+      "fr": "maigre",
+      "tags": ["descripcion-fisica/estatura-talla"]
+    },
+    {
+      "es": "esbelto",
+      "fr": "mince",
+      "tags": ["descripcion-fisica/estatura-talla"]
+    },
+    {
+      "es": "gordo",
+      "fr": "gros",
+      "tags": ["descripcion-fisica/estatura-talla"]
+    },
+    {
+      "es": "los rasgos físicos",
+      "fr": "Les traits physiques",
+      "tags": ["descripcion-fisica/rasgos-fiscos"]
+    },
+    {
+      "es": "el color de la piel​",
+      "fr": "le teint",
+      "tags": ["descripcion-fisica/rasgos-fiscos"]
+    },
+    {
+      "es": "las pecas",
+      "fr": "les taches de rousseur",
+      "tags": ["descripcion-fisica/rasgos-fiscos"]
+    },
+    {
+      "es": "un bigote",
+      "fr": "une moustache",
+      "tags": ["descripcion-fisica/rasgos-fiscos"]
+    },
+    {
+      "es": "una barba",
+      "fr": "une barbe",
+      "tags": ["descripcion-fisica/rasgos-fiscos"]
+    },
+    {
+      "es": "el carácter",
+      "fr": "Le caractère",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "simpático",
+      "fr": "sympathique",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "antipático",
+      "fr": "antipathique",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "reservado",
+      "fr": "réservé",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "tímido",
+      "fr": "timide",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "hablador",
+      "fr": "bavard",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "nervioso",
+      "fr": "nerveux",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "tranquilo",
+      "fr": "tranquille",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "calmado",
+      "fr": "calme",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "serio",
+      "fr": "sérieux",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "optimista",
+      "fr": "optimiste",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "pesimista",
+      "fr": "pessimiste",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "educado",
+      "fr": "poli",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "maleducado",
+      "fr": "impoli",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "divertido",
+      "fr": "drôle",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "feliz",
+      "fr": "heureux",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "desgraciado",
+      "fr": "malheureux",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "contento",
+      "fr": "content",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "triste​",
+      "fr": "triste",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "idiota",
+      "fr": "idiot",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "tonto",
+      "fr": "bête",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "inteligente",
+      "fr": "intelligent",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "tener sentido del humor",
+      "fr": "avoir le sens de l’humour",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "tener buen carácter",
+      "fr": "avoir bon caractère",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "tener mal carácter",
+      "fr": "avoir mauvais caractère",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "fruncir el ceño",
+      "fr": "froncer les sourcils",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "sonreir",
+      "fr": "sourire",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "reir",
+      "fr": "rire",
+      "tags": ["descripcion-fisica/caracter"]
+    },
+    {
+      "es": "llorar",
+      "fr": "pleurer",
+      "tags": ["descripcion-fisica/caracter"]
+    }
+  ]
 }

@@ -1,85 +1,111 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { normalize } from '../utils'
-import { DataContext } from '../components/data-context.component';
-import { LayoutPage } from '../components/layout.component';
-import { CategoryPreview } from '../components/category-preview.component';
-import { Layout, Text } from '@ui-kitten/components';
+import React, { useEffect, useState, useContext } from "react";
+import { DataContext } from "../components/data-context.component";
+import { LayoutPage } from "../components/layout.component";
+import { Preview } from "../components/preview/preview.component";
+import { Text } from "@ui-kitten/components";
+import SubmitInput from "../@next/components/submit-input.component";
+import { normalize } from "../utils";
 
 /** Local header for the layout */
 function LocalHeader() {
-    return (
-        <>
-            <Text style={{ fontFamily: 'CHANGETHENAME_PRIMARY' }} category='h5'>Vos premier instant en arrivant dans le pays</Text>
-            <Text style={{ fontFamily: 'CHANGETHENAME_REGULAR' }} category='s1'>Voici ce don't vous aurez besoin pour commencer a parler au gens pour une immersion rapide et efficace</Text>
-        </>
-    )
+  return (
+    <>
+      <Text style={{ fontFamily: "Lato700Bold" }} category="h5">
+        Vos premier instant en arrivant dans le pays
+      </Text>
+      <Text style={{ fontFamily: "Lato400Regular" }} category="s1">
+        Voici ce don't vous aurez besoin pour commencer a parler au gens pour
+        une immersion rapide et efficace
+      </Text>
+    </>
+  );
 }
 
 export const ImmersionScreen = ({ navigation, route }) => {
+  const { categoryPreviews } = useContext(DataContext);
 
-    const { categoryPreviews } = useContext(DataContext);
+  const [inputText, setInputText] = useState("");
+  const [slugOpenCate, setSlugOpenCate] = useState(null);
+  const [data, setData] = useState(categoryPreviews);
+  const keyWords = inputText
+    .trim()
+    .split(" ")
+    .filter((k) => !!k.length);
 
-    const [inputText, setInputText] = useState('')
-    const [indexesOpenCate, setIndexesOpenCate] = useState(null)
-    const [data, setData] = useState(categoryPreviews)
+  useEffect(() => {
+    setSlugOpenCate(null);
+  }, [inputText]);
 
-    useEffect(() => {
-        setIndexesOpenCate(null)
-    }, [inputText])
+  useEffect(() => {
+    if (inputText.length === 0) {
+      setData(categoryPreviews);
+    } else {
+      setData(
+        categoryPreviews.filter((raw) => {
+          // const allTexts = [
+          //   raw.categories.translations.map((t) => normalize(t.displayText)),
+          // ];
+          const findMatchedCate = raw.categories.translations.find(
+            (translation) => {
+              return keyWords.find((keyWord) => {
+                return normalize(translation.displayText).match(
+                  normalize(keyWord)
+                );
+              });
+            }
+          );
+          const findSentence = raw.sentences.find((sentences) => {
+            return sentences.translations.find((translation) => {
+              return keyWords.find((keyWord) => {
+                return normalize(translation.displayText).match(
+                  normalize(keyWord)
+                );
+              });
+            });
+          });
 
-    // useEffect(() => {
-    //     if (inputText.length === 0) {
-    //         setData(categoryPreviews)
-    //     } else {
-    //         setData(categoryPreviews.filter(raw => {
-    //             const findMatchedCate = raw.categories.translations.find(translation => {
-    //                 return higle.find(keyWord => {
-    //                     return normalize(translation.displayText).match(normalize(keyWord))
-    //                 })
-    //             })
-    //             const findSentence = raw.sentences.find(sentences => {
-    //                 return sentences.translations.find(translation => {
-    //                     return higle.find(keyWord => {
-    //                         return normalize(translation.displayText).match(normalize(keyWord))
-    //                     })
-    //                 })
-    //             })
-
-    //             raw.sentences = raw.sentences.sort((s1) => {
-    //                 const matched = s1.translations.find(translation => {
-    //                     return higle.find(keyWord => {
-    //                         return normalize(translation.displayText).match(normalize(keyWord))
-    //                     })
-    //                 })
-    //                 if (matched) return -1
-    //                 return 1
-    //             })
-    //             if (findMatchedCate || findSentence) {
-    //                 return true
-    //             }
-    //             return false
-    //         }))
-    //     }
-    // }, [inputText])
-
-    const onPressCategory = (index) => {
-        setIndexesOpenCate(index !== indexesOpenCate ? index : null)
+          raw.sentences = raw.sentences.sort((s1) => {
+            const matched = s1.translations.find((translation) => {
+              return keyWords.find((keyWord) => {
+                return normalize(translation.displayText).match(
+                  normalize(keyWord)
+                );
+              });
+            });
+            if (matched) return -1;
+            return 1;
+          });
+          if (findMatchedCate || findSentence) {
+            return true;
+          }
+          return false;
+        })
+      );
     }
-    return (
-        <LayoutPage
-            title="Immersion"
-            header={<LocalHeader />}
-        >
-            <Layout style={{ alignItems: 'stretch' }}>
-                {data.map((preview, i) => <CategoryPreview
-                    key={preview.categories.slug}
-                    opened={indexesOpenCate === i}
-                    preview={preview}
-                    highlights={[]}
-                    onPress={() => onPressCategory(i)}
-                />)}
-            </Layout>
-        </LayoutPage>
+  }, [inputText]);
 
-    );
+  const onPressCategory = (slug) => {
+    setSlugOpenCate(slug !== slugOpenCate ? slug : null);
+  };
+  return (
+    <LayoutPage title="Immersion" header={<LocalHeader />}>
+      <SubmitInput
+        style={{ marginVertical: 30 }}
+        placeholder="Mots clés : bus plage ..."
+        value={inputText}
+        onChangeText={setInputText}
+        onPressSubmit={() => {}}
+        iconName="search-outline"
+      />
+      {data.map((preview, i) => (
+        <Preview
+          key={preview.categories.slug}
+          opened={slugOpenCate === preview.categories.slug}
+          preview={preview}
+          highlights={keyWords}
+          onPress={() => onPressCategory(preview.categories.slug)}
+        />
+      ))}
+    </LayoutPage>
+  );
 };

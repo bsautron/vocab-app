@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import Attempt from '../../components/attempt.component'
-import { Layout } from '@ui-kitten/components'
+import React, { useEffect } from "react";
+import Attempt from "../../components/attempt.component";
+import { Layout } from "@ui-kitten/components";
 
 /**
  * Display the list of attemps
@@ -8,13 +8,19 @@ import { Layout } from '@ui-kitten/components'
  * @param opt.attempts the list of attempt to display
  * @param opt.attempts the fn to apply when the limit if attempts is reached
  */
-export default function AttemptList({ maxAttepmt, attempts, skeleton, onReachLimit, ...props }) {
+export default function AttemptList({
+  maxAttepmt,
+  attempts,
+  skeleton,
+  onReachLimit,
+  ...props
+}) {
   /** When a new attempt appear, check if we reach the limit */
   useEffect(() => {
     if (attempts.length >= maxAttepmt) {
-      onReachLimit()
+      onReachLimit();
     }
-  }, [attempts])
+  }, [attempts]);
   return (
     <Layout {...props}>
       {Array.from({ length: maxAttepmt }).map((_, i) => {
@@ -27,11 +33,9 @@ export default function AttemptList({ maxAttepmt, attempts, skeleton, onReachLim
             text={(attempts[i] || {}).text}
             valid={(attempts[i] || {}).valid}
             isLast={i === maxAttepmt - 1}
-
           ></Attempt>
-        )
+        );
       })}
     </Layout>
-  )
+  );
 }
-

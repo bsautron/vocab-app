@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
 import { Layout, Text } from "@ui-kitten/components";
-import { View } from 'react-native';
-import { HightlightText } from '../../components/highlight-text.component';
-
+import { View } from "react-native";
+import { HighlightText } from "../../components/highlight-text.component";
 
 // const mapImportantBoldText = primary => important => text => primary
 //     ? <Text category={important ? 's1' : 'p1'}>{text} </Text>
@@ -22,7 +21,6 @@ import { HightlightText } from '../../components/highlight-text.component';
 //         }
 //         {/* <Text> </Text> */}
 //     </View>
-
 
 // const renderText = ({ text, pattern, mapTextFn, removePatterns = [] }) => {
 //     const splitWord = (str, important) => str.split(' ')
@@ -46,12 +44,7 @@ import { HightlightText } from '../../components/highlight-text.component';
 //     </Layout>
 // }
 
-
 export default function ContextExample({ fr, es }) {
-
-    return <Layout style={{ flexDirection: 'column', margin: 6 }}>
-
-    </Layout>
+  return <Layout style={{ flexDirection: "column", margin: 6 }}></Layout>;
 }
 // {renderText(`${es}`, false, mapImportantBoldText)}
-

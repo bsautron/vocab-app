@@ -1,7 +1,13 @@
-import React from 'react'
-import { Input, Layout, Button, Icon, ButtonGroup } from '@ui-kitten/components'
-import { Pressable } from 'react-native'
-import SubmitInput from './submit-input.component'
+import React from "react";
+import {
+  Input,
+  Layout,
+  Button,
+  Icon,
+  ButtonGroup,
+} from "@ui-kitten/components";
+import { Pressable } from "react-native";
+import SubmitInput from "./submit-input.component";
 
 /**
  * The input for the translation
@@ -21,19 +27,29 @@ export default function TranslationInput({
   return (
     <Layout>
       <SubmitInput
-        label='Traduis le mot'
+        label="Traduis le mot"
         value={value}
         disabled={skeleton || readyToNext}
         onChangeText={onChangeText}
         onPressSubmit={onPressSubmit}
-        iconName='corner-down-left-outline'
-
+        iconName="corner-down-left-outline"
       />
-      <ButtonGroup disabled={skeleton} style={{ alignSelf: 'center' }}>
-        <Button disabled={skeleton || readyToNext} onPress={onPressDontKnow} accessoryLeft={(props) => (<Icon {...props} name='person-delete-outline' />)} />
-        <Button disabled={skeleton || !readyToNext} onPress={onPressNext} accessoryLeft={(props) => (<Icon {...props} name='arrow-forward-outline' />)} />
+      <ButtonGroup disabled={skeleton} style={{ alignSelf: "center" }}>
+        <Button
+          disabled={skeleton || readyToNext}
+          onPress={onPressDontKnow}
+          accessoryLeft={(props) => (
+            <Icon {...props} name="person-delete-outline" />
+          )}
+        />
+        <Button
+          disabled={skeleton || !readyToNext}
+          onPress={onPressNext}
+          accessoryLeft={(props) => (
+            <Icon {...props} name="arrow-forward-outline" />
+          )}
+        />
       </ButtonGroup>
-    </Layout >
-
-  )
+    </Layout>
+  );
 }

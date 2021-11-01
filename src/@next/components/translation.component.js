@@ -1,11 +1,11 @@
-import { Button, Card, Icon } from '@ui-kitten/components'
-import React, { useEffect, useState } from 'react'
-import { StyleSheet } from 'react-native'
-import { CardStyles } from '../../styles'
-import AttemptList from './attempt-list.component'
-import ContextTrad from './context-trad.component'
-import TranslationInput from './translation-input.component'
-import TranslationTitle from './translation-title.component'
+import { Button, Card, Icon } from "@ui-kitten/components";
+import React, { useEffect, useState } from "react";
+import { StyleSheet } from "react-native";
+import { CardStyles } from "../../styles";
+import AttemptList from "./attempt-list.component";
+import ContextTrad from "./context-trad.component";
+import TranslationInput from "./translation-input.component";
+import TranslationTitle from "./translation-title.component";
 
 /**
  * Check if the givving text correspond to the real trad
@@ -13,12 +13,12 @@ import TranslationTitle from './translation-title.component'
  * @param text the proposal
  */
 function isValid(trad, text) {
-  const sp = trad.split('/')
+  const sp = trad.split("/");
 
   for (const s of sp) {
-    if (s === text) return true
+    if (s === text) return true;
   }
-  return false
+  return false;
 }
 /**
  * The entiere card for the translation of one word
@@ -27,15 +27,15 @@ function isValid(trad, text) {
  */
 export default function Translation({ navigation, word, onChangeWord }) {
   /** the array of attempts for the word */
-  const [attempts, setAttempts] = useState([])
+  const [attempts, setAttempts] = useState([]);
   /** use for shoing the traduction of the word */
-  const [showTrad, setDisplayTrad] = useState(false)
+  const [showTrad, setDisplayTrad] = useState(false);
   /** if the use don't know the trad */
-  const [dontKnow, setDontKnow] = useState(false)
+  const [dontKnow, setDontKnow] = useState(false);
   /** when we are ready to change word  */
-  const [goToChange, letsGoToChange] = useState(false)
+  const [goToChange, letsGoToChange] = useState(false);
   /** the input of the proposal trad by the use */
-  const [textInput, setInput] = useState('')
+  const [textInput, setInput] = useState("");
 
   /**
    * Push the attempt to the list of all attempts
@@ -49,14 +49,14 @@ export default function Translation({ navigation, word, onChangeWord }) {
         valid,
         text: wordAttempt,
       },
-    ])
-    setDisplayTrad(valid)
-  }
+    ]);
+    setDisplayTrad(valid);
+  };
 
   /** When a new attempt appear, clear the input */
   useEffect(() => {
-    setInput('')
-  }, [attempts])
+    setInput("");
+  }, [attempts]);
 
   /**
    * When we are triggering the changing word, clear all and all the changeWord from the parent
@@ -64,14 +64,14 @@ export default function Translation({ navigation, word, onChangeWord }) {
    */
   useEffect(() => {
     if (goToChange) {
-      letsGoToChange(false)
-      setDontKnow(false)
-      setDisplayTrad(false)
-      setAttempts([])
-      setInput('')
-      onChangeWord()
+      letsGoToChange(false);
+      setDontKnow(false);
+      setDisplayTrad(false);
+      setAttempts([]);
+      setInput("");
+      onChangeWord();
     }
-  }, [goToChange])
+  }, [goToChange]);
 
   /**
    * Show the traduction
@@ -82,14 +82,13 @@ export default function Translation({ navigation, word, onChangeWord }) {
    */
   useEffect(() => {
     if (dontKnow) {
-      setDisplayTrad(true)
+      setDisplayTrad(true);
     }
-  }, [dontKnow])
-
+  }, [dontKnow]);
 
   const onNewAttempt = (wordAttempt) => {
-    pushAttempt(isValid(word.es, wordAttempt), wordAttempt)
-  }
+    pushAttempt(isValid(word.es, wordAttempt), wordAttempt);
+  };
 
   return (
     <Card style={styles.card}>
@@ -119,13 +118,11 @@ export default function Translation({ navigation, word, onChangeWord }) {
         disabled={showTrad}
       />
     </Card>
-  )
+  );
 }
-
-
 
 const styles = StyleSheet.create({
   card: {
     ...CardStyles.cardDefault,
   },
-})
+});

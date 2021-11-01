@@ -20,6 +20,7 @@
     "@ui-kitten/components": "^5.1.0",
     "@ui-kitten/eva-icons": "^5.1.0",
     "anonymous-files": "^1.0.1",
+    "escape-string-regexp": "^5.0.0",
     "expo": "~41.0.1",
     "expo-app-loading": "^1.2.1",
     "expo-font": "~9.1.0",
@@ -27,10 +28,12 @@
     "expo-sharing": "~9.1.2",
     "expo-status-bar": "~1.0.4",
     "graphql": "^15.5.0",
+    "highlight-words-core": "^1.2.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
     "react-native-gesture-handler": "~1.10.2",
+    "react-native-highlight-words": "^1.0.1",
     "react-native-reanimated": "~2.1.0",
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.0.0",
@@ -39,7 +42,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@expo/webpack-config": "^0.12.68"
+    "@expo/webpack-config": "^0.12.68",
+    "prettier": "2.4.1"
   },
   "private": true
 }

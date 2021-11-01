@@ -1,162 +1,206 @@
 {
-    "categoryPreviews": [
+  "categoryPreviews": [
+    {
+      "categories": {
+        "image": "http://163.172.63.65:5000/immersion/categories/basics-airport.png",
+        "slug": "basics/airport",
+        "translations": [
+          {
+            "lang": "EN",
+            "displayText": "At the airport"
+          },
+          {
+            "lang": "FR",
+            "displayText": "Á l'aéroport"
+          },
+          {
+            "lang": "ES",
+            "displayText": "En el aeropuerto"
+          }
+        ]
+      },
+      "sentences": [
         {
-            "categories": {
-                "image": "http://163.172.63.65:5000/immersion/categories/basics-airport.png",
-                "slug": "basics/airport",
-                "translations": [
-                    {
-                        "lang": "FR",
-                        "displayText": "Á l'aéroport"
-                    },
-                    {
-                        "lang": "ES",
-                        "displayText": "En el aeropuerto"
-                    }
-                ]
+          "slug": "airport/howtogettothecenter",
+          "translations": [
+            {
+              "lang": "EN",
+              "displayText": "How to get to the center ?"
             },
-            "sentences": [
-                {
-                    "slug": "airport/howtogettothecenter",
-                    "translations": [
-                        {
-                            "lang": "FR",
-                            "displayText": "Comment aller au centre ville ?"
-                        },
-                        {
-                            "lang": "ES",
-                            "displayText": "¿ Cómo ir al centro ?"
-                        }
-                    ]
-                },
-                {
-                    "slug": "airport/whereistheexit",
-                    "translations": [
-                        {
-                            "lang": "FR",
-                            "displayText": "Où est la sortie ?"
-                        },
-                        {
-                            "lang": "ES",
-                            "displayText": "¿ Dónde está la salida ?"
-                        }
-                    ]
-                },
-                {
-                    "slug": "airport/whereisthebathroom",
-                    "translations": [
-                        {
-                            "lang": "FR",
-                            "displayText": "Où sont les toilettes ?"
-                        },
-                        {
-                            "lang": "ES",
-                            "displayText": "¿ Dónde están los baños ?"
-                        }
-                    ]
-                },
-                {
-                    "slug": "airport/iwanttochangemymoney",
-                    "translations": [
-                        {
-                            "lang": "FR",
-                            "displayText": "Je veux changer mon argent"
-                        },
-                        {
-                            "lang": "ES",
-                            "displayText": "Quiero cambiar mi dinero"
-                        }
-                    ]
-                }
-            ]
+            {
+              "lang": "FR",
+              "displayText": "Comment aller au centre ville ?"
+            },
+            {
+              "lang": "ES",
+              "displayText": "¿ Cómo ir al centro ?"
+            }
+          ]
         },
         {
-            "categories": {
-                "image": "http://163.172.63.65:5000/immersion/categories/basics-transports.png",
-                "slug": "basics/transports",
-                "translations": [
-                    {
-                        "lang": "FR",
-                        "displayText": "Dans les transports"
-                    },
-                    {
-                        "lang": "ES",
-                        "displayText": "En los transportes"
-                    }
-                ]
+          "slug": "airport/whereistheexit",
+          "translations": [
+            {
+              "lang": "EN",
+              "displayText": "Where is the exit ?"
             },
-            "sentences": [
-                {
-                    "slug": "transport/tellmewhentogodown",
-                    "translations": [
-                        {
-                            "lang": "FR",
-                            "displayText": "Dites moi quand je dois descendre"
-                        },
-                        {
-                            "lang": "ES",
-                            "displayText": "Dime cuando tengo que bajar"
-                        }
-                    ]
-                }
-            ]
+            {
+              "lang": "FR",
+              "displayText": "Où est la sortie ?"
+            },
+            {
+              "lang": "ES",
+              "displayText": "¿ Dónde está la salida ?"
+            }
+          ]
         },
         {
-            "categories": {
-                "image": "http://163.172.63.65:5000/immersion/categories/basics-restaurant.png",
-                "slug": "basics/eat",
-                "translations": [
-                    {
-                        "lang": "FR",
-                        "displayText": "J'ai faim"
-                    },
-                    {
-                        "lang": "FR",
-                        "displayText": "Tengo hambre"
-                    }
-                ]
+          "slug": "airport/whereisthebathroom",
+          "translations": [
+            {
+              "lang": "EN",
+              "displayText": "Where is the bathroom ?"
             },
-            "sentences": [
-                {
-                    "slug": "eat/iwantthevegetariandish",
-                    "translations": [
-                        {
-                            "lang": "FR",
-                            "displayText": "Je veux le plat végétarien"
-                        },
-                        {
-                            "lang": "ES",
-                            "displayText": "Quiero el plato vegetariano"
-                        }
-                    ]
-                },
-                {
-                    "slug": "eat/meatless",
-                    "translations": [
-                        {
-                            "lang": "FR",
-                            "displayText": "Sans viande"
-                        },
-                        {
-                            "lang": "ES",
-                            "displayText": "Sin carne"
-                        }
-                    ]
-                },
-                {
-                    "slug": "eat/onebeer",
-                    "translations": [
-                        {
-                            "lang": "FR",
-                            "displayText": "Une bière"
-                        },
-                        {
-                            "lang": "ES",
-                            "displayText": "Una cerveza"
-                        }
-                    ]
-                }
-            ]
+            {
+              "lang": "FR",
+              "displayText": "Où sont les toilettes ?"
+            },
+            {
+              "lang": "ES",
+              "displayText": "¿ Dónde están los baños ?"
+            }
+          ]
+        },
+        {
+          "slug": "airport/iwanttochangemymoney",
+          "translations": [
+            {
+              "lang": "EN",
+              "displayText": "I want to change my money ?"
+            },
+            {
+              "lang": "FR",
+              "displayText": "Je veux changer mon argent"
+            },
+            {
+              "lang": "ES",
+              "displayText": "Quiero cambiar mi dinero"
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "categories": {
+        "image": "http://163.172.63.65:5000/immersion/categories/basics-transports.png",
+        "slug": "basics/transports",
+        "translations": [
+          {
+            "lang": "EN",
+            "displayText": "In the transports"
+          },
+          {
+            "lang": "FR",
+            "displayText": "Dans les transports"
+          },
+          {
+            "lang": "ES",
+            "displayText": "En los transportes"
+          }
+        ]
+      },
+      "sentences": [
+        {
+          "slug": "transport/tellmewhentogodown",
+          "translations": [
+            {
+              "lang": "EN",
+              "displayText": "Tell me when do I have to come down"
+            },
+            {
+              "lang": "FR",
+              "displayText": "Dites moi quand je dois descendre"
+            },
+            {
+              "lang": "ES",
+              "displayText": "Dime cuándo tengo que bajar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categories": {
+        "image": "http://163.172.63.65:5000/immersion/categories/basics-restaurant.png",
+        "slug": "basics/eat",
+        "translations": [
+          {
+            "lang": "EN",
+            "displayText": "I'm hungry"
+          },
+          {
+            "lang": "FR",
+            "displayText": "J'ai faim"
+          },
+          {
+            "lang": "FR",
+            "displayText": "Tengo hambre"
+          }
+        ]
+      },
+      "sentences": [
+        {
+          "slug": "eat/iwantthevegetariandish",
+          "translations": [
+            {
+              "lang": "EN",
+              "displayText": "I want the vegetarian dish"
+            },
+            {
+              "lang": "FR",
+              "displayText": "Je veux le plat végétarien"
+            },
+            {
+              "lang": "ES",
+              "displayText": "Quiero el plato vegetariano"
+            }
+          ]
+        },
+        {
+          "slug": "eat/meatless",
+          "translations": [
+            {
+              "lang": "EN",
+              "displayText": "Without meat"
+            },
+            {
+              "lang": "FR",
+              "displayText": "Sans viande"
+            },
+            {
+              "lang": "ES",
+              "displayText": "Sin carne"
+            }
+          ]
+        },
+        {
+          "slug": "eat/onebeer",
+          "translations": [
+            {
+              "lang": "EN",
+              "displayText": "One beer"
+            },
+            {
+              "lang": "FR",
+              "displayText": "Une bière"
+            },
+            {
+              "lang": "ES",
+              "displayText": "Una cerveza"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
