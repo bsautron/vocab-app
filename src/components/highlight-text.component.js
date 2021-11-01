@@ -9,7 +9,6 @@ export default function Highlighter({
   highlightStyle,
   searchWords,
   textToHighlight,
-  sanitize,
   style,
   category,
   ...props
@@ -17,7 +16,7 @@ export default function Highlighter({
   const chunks = findAll({
     textToHighlight,
     searchWords,
-    sanitize,
+    sanitize: (text) => normalize(text),
     autoEscape,
   });
 
@@ -55,10 +54,12 @@ export function HighlightText({
 }) {
   return (
     <Highlighter
+      numberOfLines={numberOfLines}
       category={category}
       highlightStyle={{
         fontFamily: "Lato400Regular",
         backgroundColor: colorHighlight,
+        borderRadius: 4,
       }}
       searchWords={highlights}
       style={{ fontFamily: "Lato400Regular", color: color }}

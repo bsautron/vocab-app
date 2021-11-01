@@ -5,20 +5,53 @@ import { Preview } from "../components/preview/preview.component";
 import { Text } from "@ui-kitten/components";
 import SubmitInput from "../@next/components/submit-input.component";
 import { normalize } from "../utils";
+import { default as theme } from "../../theme.json";
 
 /** Local header for the layout */
 function LocalHeader() {
   return (
     <>
       <Text style={{ fontFamily: "Lato700Bold" }} category="h5">
-        Vos premier instant en arrivant dans le pays
+        Your first moments when you arrive in a country
       </Text>
       <Text style={{ fontFamily: "Lato400Regular" }} category="s1">
-        Voici ce don't vous aurez besoin pour commencer a parler au gens pour
-        une immersion rapide et efficace
+        Here's what you'll need to start talking to people for a quick and
+        effective immersion
       </Text>
     </>
   );
+}
+
+function filterData(categoryPreviews, keyWords = []) {
+  return categoryPreviews
+    .map((raw) => {
+      let score = 0;
+      const findMatchedCate = keyWords.filter((keyWord) =>
+        raw.categories.searchText.match(keyWord)
+      );
+      score += findMatchedCate.join("").length * 1.12;
+
+      const sentences = raw.sentences
+        .map((sentence) => {
+          const sentenceScore = keyWords
+            .filter((keyWord) => sentence.searchText.match(keyWord))
+            .join("").length;
+          score += sentenceScore;
+          return {
+            ...sentence,
+            score: sentenceScore,
+          };
+        })
+        .sort((a, b) => b.score - a.score);
+      return {
+        ...raw,
+        sentences: sentences,
+        score,
+      };
+    })
+    .sort((a, b) => {
+      return b.score - a.score;
+    });
 }
 
 export const ImmersionScreen = ({ navigation, route }) => {
@@ -30,6 +63,7 @@ export const ImmersionScreen = ({ navigation, route }) => {
   const keyWords = inputText
     .trim()
     .split(" ")
+    .map((k) => normalize(k))
     .filter((k) => !!k.length);
 
   useEffect(() => {
@@ -40,47 +74,7 @@ export const ImmersionScreen = ({ navigation, route }) => {
     if (inputText.length === 0) {
       setData(categoryPreviews);
     } else {
-      setData(
-        categoryPreviews.filter((raw) => {
-          // const allTexts = [
-          //   raw.categories.translations.map((t) => normalize(t.displayText)),
-          // ];
-          const findMatchedCate = raw.categories.translations.find(
-            (translation) => {
-              return keyWords.find((keyWord) => {
-                return normalize(translation.displayText).match(
-                  normalize(keyWord)
-                );
-              });
-            }
-          );
-          const findSentence = raw.sentences.find((sentences) => {
-            return sentences.translations.find((translation) => {
-              return keyWords.find((keyWord) => {
-                return normalize(translation.displayText).match(
-                  normalize(keyWord)
-                );
-              });
-            });
-          });
-
-          raw.sentences = raw.sentences.sort((s1) => {
-            const matched = s1.translations.find((translation) => {
-              return keyWords.find((keyWord) => {
-                return normalize(translation.displayText).match(
-                  normalize(keyWord)
-                );
-              });
-            });
-            if (matched) return -1;
-            return 1;
-          });
-          if (findMatchedCate || findSentence) {
-            return true;
-          }
-          return false;
-        })
-      );
+      setData(filterData(categoryPreviews, keyWords));
     }
   }, [inputText]);
 
@@ -91,7 +85,7 @@ export const ImmersionScreen = ({ navigation, route }) => {
     <LayoutPage title="Immersion" header={<LocalHeader />}>
       <SubmitInput
         style={{ marginVertical: 30 }}
-        placeholder="Mots clés : bus plage ..."
+        placeholder="Mots clés : bus beach ..."
         value={inputText}
         onChangeText={setInputText}
         onPressSubmit={() => {}}
