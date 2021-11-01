@@ -22,6 +22,7 @@
     "anonymous-files": "^1.0.1",
     "escape-string-regexp": "^5.0.0",
     "expo": "~41.0.1",
+    "expo-analytics-amplitude": "~10.1.0",
     "expo-app-loading": "^1.2.1",
     "expo-font": "~9.1.0",
     "expo-image-picker": "~10.1.4",

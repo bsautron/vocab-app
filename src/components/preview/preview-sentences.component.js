@@ -4,7 +4,7 @@ import { View } from "react-native";
 import { HighlightText } from "../highlight-text.component";
 import { default as theme } from "../../../theme.json";
 
-const minSize = 1;
+const minSize = 2;
 
 export function PreviewSentences({ preview, highlights, opened }) {
   return (
@@ -47,20 +47,27 @@ export function PreviewSentences({ preview, highlights, opened }) {
           {opened ? (
             <>
               <Text style={{ fontFamily: "Lato400Regular" }} category="c1">
-                Voir moin
+                See less
               </Text>
               <Icon
-                style={{ marginTop: 4, marginLeft: 5, width: 10, height: 10 }}
+                fill="black"
+                style={{
+                  marginTop: 4,
+                  marginLeft: 5,
+                  width: 10,
+                  height: 10,
+                }}
                 name="arrowhead-up-outline"
               />
             </>
           ) : (
             <>
               <Text style={{ fontFamily: "Lato400Regular" }} category="c1">
-                Voir {preview.sentences.length - minSize} exemple
-                {preview.sentences.length - minSize > 1 ? "s" : ""} de plus
+                See {preview.sentences.length - minSize} more example
+                {preview.sentences.length - minSize > 1 ? "s" : ""}
               </Text>
               <Icon
+                fill="black"
                 style={{ marginTop: 4, marginLeft: 5, width: 10, height: 10 }}
                 name="arrowhead-down-outline"
               />

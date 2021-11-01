@@ -4690,6 +4690,11 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+expo-analytics-amplitude@~10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/expo-analytics-amplitude/-/expo-analytics-amplitude-10.1.0.tgz#5d1818e55ba09529cf296e707e23849ca1010363"
+  integrity sha512-n35yhb/VsgNEwM6tnTSY7g/jM7PcMRpk5NdGJCr8DL2DRegZnCRoBA9AS6K1akqBQgS2uK3mBIObAqVqCRtmFw==
+
 expo-app-loading@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/expo-app-loading/-/expo-app-loading-1.2.1.tgz#d097abcbb3bb7cae0646f29560a431c9bff95169"

@@ -2,10 +2,12 @@ import React, { useEffect, useState, useContext } from "react";
 import { DataContext } from "../components/data-context.component";
 import { LayoutPage } from "../components/layout.component";
 import { Preview } from "../components/preview/preview.component";
-import { Text } from "@ui-kitten/components";
+import { Text, Button } from "@ui-kitten/components";
 import SubmitInput from "../@next/components/submit-input.component";
-import { normalize } from "../utils";
+import { normalize, logEvents } from "../utils";
 import { default as theme } from "../../theme.json";
+import { View, Linking } from "react-native";
+import * as Amplitude from "expo-analytics-amplitude";
 
 /** Local header for the layout */
 function LocalHeader() {
@@ -49,6 +51,7 @@ function filterData(categoryPreviews, keyWords = []) {
         score,
       };
     })
+    .filter((preview) => preview.score)
     .sort((a, b) => {
       return b.score - a.score;
     });
@@ -68,6 +71,7 @@ export const ImmersionScreen = ({ navigation, route }) => {
 
   useEffect(() => {
     setSlugOpenCate(null);
+    logEvents("Immersion", "Search", { text: inputText });
   }, [inputText]);
 
   useEffect(() => {
@@ -79,13 +83,20 @@ export const ImmersionScreen = ({ navigation, route }) => {
   }, [inputText]);
 
   const onPressCategory = (slug) => {
-    setSlugOpenCate(slug !== slugOpenCate ? slug : null);
+    const isToOpen = slug !== slugOpenCate;
+    if (isToOpen) {
+      logEvents("Immersion", "Click category", { open: true, slug });
+      setSlugOpenCate(slug);
+    } else {
+      logEvents("Immersion", "Click category", { open: false, slug });
+      setSlugOpenCate(null);
+    }
   };
   return (
     <LayoutPage title="Immersion" header={<LocalHeader />}>
       <SubmitInput
         style={{ marginVertical: 30 }}
-        placeholder="Mots clés : bus beach ..."
+        placeholder="Key words : bus beach ..."
         value={inputText}
         onChangeText={setInputText}
         onPressSubmit={() => {}}
@@ -100,6 +111,33 @@ export const ImmersionScreen = ({ navigation, route }) => {
           onPress={() => onPressCategory(preview.categories.slug)}
         />
       ))}
+
+      <View
+        style={{
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: data.length ? 60 : 0,
+          marginBottom: 160,
+        }}
+      >
+        <Text category="h6">Do you like this app ?</Text>
+        <View style={{ marginTop: 20, marginBottom: 30 }}>
+          <Text>• If you want more content</Text>
+          <Text>• If you have recommendations</Text>
+          <Text>• If you have troubles</Text>
+        </View>
+        <Button
+          appearance="outline"
+          status="primary"
+          onPress={() => {
+            logEvents("Immersion", "Click email");
+            Linking.openURL("mailto:immersion@sautron.io");
+          }}
+        >
+          Please : immersion@sautron.io
+        </Button>
+      </View>
     </LayoutPage>
   );
 };

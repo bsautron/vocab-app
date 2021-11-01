@@ -14,6 +14,7 @@ import {
 } from "@expo-google-fonts/lato";
 import { DataContext } from "./src/components/data-context.component";
 import { normalize } from "./src/utils";
+import * as Amplitude from "expo-analytics-amplitude";
 
 function getTranslations(translations, langs) {
   const ret = [
@@ -75,19 +76,21 @@ function prepareData(database, langs) {
 }
 
 export default function App() {
+  const [langs] = useState(["EN", "ES"]);
   const [loading, setLoading] = useState(true);
-  const [langs, setLangs] = useState(["EN", "ES"]);
+  const [analyticsLoaded, setAnalyticsLoaded] = useState(false);
+  const [database, setDatabase] = useState(null);
+  const [filteredDatabase, setFilteredDatabase] = useState(null);
   const [fontLoaded] = Font.useFonts({
     Lato700Bold: Lato_700Bold,
     Lato400Regular: Lato_400Regular,
     Lato300Light: Lato_300Light,
   });
-  const [database, setDatabase] = useState(null);
-  const [filteredDatabase, setFilteredDatabase] = useState(null);
 
   /** Fetch data base on launch */
   useEffect(() => {
     fetchDatabase();
+    initAnalytics();
   }, []);
 
   /** Set loading false only if database filtered */
@@ -95,7 +98,7 @@ export default function App() {
     if (fontLoaded && filteredDatabase) {
       setLoading(false);
     }
-  }, [fontLoaded, filteredDatabase]);
+  }, [fontLoaded, filteredDatabase, analyticsLoaded]);
 
   useEffect(() => {
     if (database && langs.length) {
@@ -115,6 +118,12 @@ export default function App() {
       console.error(error);
     }
   };
+
+  function initAnalytics() {
+    Amplitude.initializeAsync("14345103dcc648ca1fa9ecc7cefde563")
+      .then(() => setAnalyticsLoaded(true))
+      .catch(() => setAnalyticsLoaded(false));
+  }
 
   if (loading) {
     return <AppLoading />;

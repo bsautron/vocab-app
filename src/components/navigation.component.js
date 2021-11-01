@@ -30,6 +30,7 @@ const ImmersionNavigator = () => (
 
 export const AppNavigator = () => (
   <NavigationContainer>
-    <ImmersionNavigator />
+    <ImmersionStack />
+    {/* //   <ImmersionNavigator /> */}
   </NavigationContainer>
 );
